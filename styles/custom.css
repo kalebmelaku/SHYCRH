@@ -1,0 +1,460 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.bg-custom {
+  background-color: #023c7b;
+}
+
+.btn-blue {
+  background-color: #023c7b !important;
+  color: #fff;
+  padding: 15px 35px;
+}
+
+.text-custom {
+  color: #023c7b !important;
+}
+
+.btn {
+  transition: all 500ms !important;
+  background-color: #fff;
+}
+.btn:hover {
+  background-color: #023c7b !important;
+  color: #fff !important;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block !important;
+  margin-top: 0;
+}
+
+.text-cut {
+  width: 50%;
+}
+
+.top-nav-wrapper nav .links-social {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+.top-nav-wrapper nav .links-social a {
+  margin-left: 1.5rem;
+}
+
+.navbar {
+  background-color: #023c7b;
+  position: relative;
+  z-index: 3;
+}
+.navbar .navbar-collapse a {
+  color: #fff;
+}
+.navbar .navbar-collapse a:hover {
+  color: #eee !important;
+}
+.navbar .dropdown-menu li .dropdown-item:hover {
+  color: #000 !important;
+}
+.navbar .donate {
+  background-color: #ff0000;
+  margin-left: 3rem;
+  padding: 12px 48px;
+  color: #fff;
+}
+
+main {
+  width: 100vw;
+  height: 80vh;
+  overflow-x: hidden;
+  position: relative;
+}
+main .bg {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background: url("../img/surgery.jpg") no-repeat center center/cover;
+}
+main .bg:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(37, 37, 37, 0.631372549);
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+main .hero-text {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  text-align: center;
+  z-index: 2;
+}
+main .hero-text h1 {
+  font-size: 3.5rem;
+}
+main .hero-text a {
+  padding: 20px 38px;
+  font-weight: bold;
+  transition: all 500ms !important;
+}
+main .hero-text a:hover {
+  background-color: #023c7b !important;
+  color: #fff !important;
+}
+
+section.count {
+  background-color: #f8f8f8;
+}
+section.count .col-sm h1 {
+  font-size: 4rem;
+}
+section.news .gap-2 a {
+  background: #023c7b;
+  color: #fff;
+}
+section.news .row .main-cont {
+  position: relative;
+}
+section.news .row .img-cont {
+  height: 20rem;
+  background-color: #023c7b;
+}
+section.news .row .img-cont img {
+  height: 100%;
+  width: 100%;
+}
+section.news .row .image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: 0.5s ease;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+section.news .row .middle {
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+section.news .row .main-cont:hover .image {
+  opacity: 0.3;
+}
+section.news .row .main-cont:hover .middle {
+  opacity: 1;
+}
+section.news .row .text {
+  color: white;
+  padding: 16px 32px;
+}
+section.how-to-help {
+  margin-top: 2rem;
+  background: url(https://en.emergency.it/wp-content/uploads/2020/06/Dahen-phot.jpeg) no-repeat center center/cover;
+  width: 100vw !important;
+  min-height: 800px;
+  position: relative;
+}
+section.how-to-help:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(37, 37, 37, 0.3921568627);
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+section.how-to-help .inner-box {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  text-align: center;
+  z-index: 2;
+}
+section.our_goals a {
+  background-color: #023c7b;
+  color: #fff;
+}
+section.intervention .col-sm h3 {
+  margin-bottom: 1rem;
+}
+section.intervention .col-sm p {
+  border-bottom: 1px solid #444;
+  padding-bottom: 0.5rem;
+}
+section.map {
+  width: 100%;
+}
+section.budget {
+  background: url("../img/goal.jpg");
+  min-height: 500px;
+  position: relative;
+}
+section.budget:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(37, 37, 37, 0.5843137255);
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+section.budget .inner-box {
+  position: relative;
+  z-index: 2;
+  color: #fff;
+}
+section.budget .subtitle {
+  font-weight: bold;
+}
+section.budget h2.title {
+  font-size: 8rem;
+}
+section.report .row .col-sm h4, section.report .row .col-sm p {
+  padding-left: 1rem;
+}
+section.report .row .col-sm a {
+  background-color: #023c7b;
+  color: #fff;
+  margin-left: 1rem;
+}
+section.report .row .col-sm img {
+  width: 100%;
+}
+section.thanks {
+  background: url("../img/thanks.jpg") no-repeat center center/cover;
+  min-height: 500px;
+  position: relative;
+}
+section.thanks:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(37, 37, 37, 0.5843137255);
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+section.thanks .inner-box {
+  position: absolute;
+  z-index: 2;
+  color: #fff;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+section.whoweare {
+  margin-top: 2rem;
+  background: url("../img/whoweare.jpg") no-repeat center center/cover;
+  width: 100vw !important;
+  min-height: 400px;
+  position: relative;
+}
+section.whoweare:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(37, 37, 37, 0.3921568627);
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+section.whoweare .inner-box {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  text-align: center;
+  z-index: 2;
+}
+section.feature_video .video-container {
+  height: 500px;
+}
+section.countries .row .col-sm {
+  margin: 2rem 0;
+}
+section.countries .row img {
+  width: 80%;
+  margin: 2rem 0;
+}
+section.countries p {
+  width: 50%;
+  text-align: center;
+  margin: 0 auto;
+}
+section.withdrawal {
+  background: url("../img/withdrawal.jpg") no-repeat center center/cover;
+  height: 500px;
+  width: 100%;
+}
+section.organization {
+  background: url(https://en.emergency.it/wp-content/uploads/2017/07/EMERGENCY-organization-header-02.jpg) no-repeat center center/cover;
+}
+section.todo p {
+  text-transform: capitalize;
+}
+section.todo .col-sm {
+  background-color: #eee;
+}
+
+main.whoweare {
+  width: 100%;
+  background: url("../img/whoweare.jpg") center center/cover no-repeat;
+  min-height: 600px;
+  position: relative;
+}
+main.whoweare:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(37, 37, 37, 0.3921568627);
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+main.whoweare .inner-box {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: end;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 5rem;
+}
+main.whoweare .inner-box h1 {
+  font-size: 5rem;
+}
+main.what_can_you_do {
+  max-height: 330px !important;
+  background: url("../img/whatyoudo.jpg") center center/cover no-repeat;
+}
+main.what_can_you_do:before {
+  background: rgba(37, 37, 37, 0.6549019608);
+}
+main.what_can_you_do .inner-box {
+  color: #fff;
+  align-items: start;
+  width: 50%;
+}
+main.what_can_you_do .inner-box h2 {
+  font-size: 4rem;
+}
+main.what_can_you_do .inner-box p {
+  font-weight: bold;
+}
+main.workwithus {
+  max-height: 330px !important;
+  background: url("../img/workwithus.jpg") center center/cover no-repeat;
+}
+main.workwithus:before {
+  background: rgba(37, 37, 37, 0.6549019608);
+}
+main.workwithus .inner-box {
+  color: #fff;
+  align-items: start;
+  width: 50%;
+}
+main.workwithus .inner-box h2 {
+  font-size: 4rem;
+}
+main.workwithus .inner-box p {
+  font-weight: bold;
+}
+main.press {
+  min-height: 330px !important;
+  max-height: 500px !important;
+  background: url("../img/press.jpg") center center/cover no-repeat;
+}
+main.press:before {
+  background: rgba(37, 37, 37, 0.4784313725);
+}
+main.press .inner-box {
+  color: #fff;
+  align-items: start;
+  width: 50%;
+}
+main.press .inner-box h2 {
+  font-size: 4rem;
+}
+main.press .inner-box p {
+  font-weight: bold;
+}
+main.donate {
+  min-height: 330px !important;
+  max-height: 400px !important;
+  width: 100%;
+  background: url("../img/donate.jpg") center center/cover no-repeat;
+}
+
+footer .bottom-footer .logo {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+footer .bottom-footer .logo img {
+  width: 10%;
+  margin-right: 1rem;
+}
+footer .bottom-footer p {
+  display: inline;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
+
+@media (max-width: 456px) {
+  nav .donate {
+    background-color: #ff0000;
+    margin-left: 1rem;
+    padding: 12px 24px;
+    color: #fff;
+  }
+  main .hero-text {
+    width: 22rem;
+  }
+  main .hero-text h1 {
+    font-size: 2.5rem;
+  }
+  .report .row .col-sm {
+    padding-top: 2rem;
+  }
+}
+@media (max-width: 765px) {
+  main .hero-text {
+    width: 22rem;
+  }
+  main .hero-text h1 {
+    font-size: 2.5rem;
+  }
+}/*# sourceMappingURL=custom.css.map */
