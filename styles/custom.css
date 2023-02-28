@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Ubuntu", sans-serif;
 }
 
 body {
@@ -31,6 +32,15 @@ body {
   color: #fff !important;
 }
 
+.btn-login {
+  transition: all 500ms !important;
+  background-color: #023c7b;
+}
+.btn-login:hover {
+  background-color: #023c7b !important;
+  color: #fff !important;
+}
+
 .dropdown:hover .dropdown-menu {
   display: block !important;
   margin-top: 0;
@@ -38,6 +48,10 @@ body {
 
 .text-cut {
   width: 50%;
+}
+
+.text-cut-md {
+  width: 70%;
 }
 
 .top-nav-wrapper nav .links-social {
@@ -65,9 +79,35 @@ body {
 }
 .navbar .donate {
   background-color: #ff0000;
-  margin-left: 3rem;
+  margin-left: 2rem;
   padding: 12px 48px;
   color: #fff;
+  font-weight: bold;
+  border: none;
+  -webkit-clip-path: polygon(26% 0, 100% 1%, 100% 100%, 0 100%);
+          clip-path: polygon(26% 0, 100% 1%, 100% 100%, 0 100%);
+  transition: all 500ms;
+}
+.navbar .donate:hover {
+  background-color: #fff;
+  color: #023c7b;
+  font-weight: bold;
+}
+
+.middle-footer .card .form-inline {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+form.appointment .form-group {
+  width: 100% !important;
+}
+form.appointment .form-group:nth-child(even) {
+  margin-left: 2rem;
+}
+form.appointment input, form.appointment select {
+  width: 100% !important;
 }
 
 main {
@@ -80,14 +120,17 @@ main .bg {
   width: 100%;
   height: 100%;
   position: relative;
-  background: url("../img/surgery.jpg") no-repeat center center/cover;
+}
+main .bg img {
+  width: 100%;
+  height: 100%;
 }
 main .bg:before {
   content: "";
   position: absolute;
   top: 0;
   left: 0;
-  background: rgba(37, 37, 37, 0.631372549);
+  background: rgba(37, 37, 37, 0.3960784314);
   width: 100%;
   height: 100%;
   z-index: 1;
@@ -201,6 +244,9 @@ section.intervention .col-sm p {
   border-bottom: 1px solid #444;
   padding-bottom: 0.5rem;
 }
+section.intervention .col-sm .other_services {
+  display: none !important;
+}
 section.map {
   width: 100%;
 }
@@ -240,6 +286,10 @@ section.report .row .col-sm a {
 }
 section.report .row .col-sm img {
   width: 100%;
+  height: 100%;
+}
+section.report .row .col-sm p {
+  line-height: 30px;
 }
 section.thanks {
   background: url("../img/thanks.jpg") no-repeat center center/cover;
@@ -293,14 +343,13 @@ section.whoweare .inner-box {
 section.feature_video .video-container {
   height: 500px;
 }
-section.countries .row .col-sm {
+section.pay_option .row .col-sm {
   margin: 2rem 0;
 }
-section.countries .row img {
-  width: 80%;
-  margin: 2rem 0;
+section.pay_option .row img {
+  margin: 1rem 0;
 }
-section.countries p {
+section.pay_option p {
   width: 50%;
   text-align: center;
   margin: 0 auto;
@@ -313,18 +362,39 @@ section.withdrawal {
 section.organization {
   background: url(https://en.emergency.it/wp-content/uploads/2017/07/EMERGENCY-organization-header-02.jpg) no-repeat center center/cover;
 }
+section.structure .struct_container img {
+  width: 100%;
+}
 section.todo p {
   text-transform: capitalize;
 }
 section.todo .col-sm {
   background-color: #eee;
 }
+section.todo .col-sm div {
+  width: 100%;
+  padding: 0 !important;
+}
+section.todo .col-sm div img {
+  width: 100%;
+}
+section.news-video .col-vid {
+  height: 400px;
+}
+section.news-video .col-vid iframe {
+  height: 100% !important;
+}
 
 main.whoweare {
   width: 100%;
-  background: url("../img/whoweare.jpg") center center/cover no-repeat;
   min-height: 600px;
   position: relative;
+}
+main.whoweare img {
+  position: absolute;
+  z-index: -2;
+  width: 100%;
+  height: 100%;
 }
 main.whoweare:before {
   content: "";
@@ -346,7 +416,11 @@ main.whoweare .inner-box {
   padding-top: 5rem;
 }
 main.whoweare .inner-box h1 {
-  font-size: 5rem;
+  font-size: 4rem;
+}
+main.short {
+  min-height: 300px;
+  max-height: 300px;
 }
 main.what_can_you_do {
   max-height: 330px !important;
@@ -368,7 +442,6 @@ main.what_can_you_do .inner-box p {
 }
 main.workwithus {
   max-height: 330px !important;
-  background: url("../img/workwithus.jpg") center center/cover no-repeat;
 }
 main.workwithus:before {
   background: rgba(37, 37, 37, 0.6549019608);
@@ -376,7 +449,6 @@ main.workwithus:before {
 main.workwithus .inner-box {
   color: #fff;
   align-items: start;
-  width: 50%;
 }
 main.workwithus .inner-box h2 {
   font-size: 4rem;
@@ -407,7 +479,30 @@ main.donate {
   min-height: 330px !important;
   max-height: 400px !important;
   width: 100%;
-  background: url("../img/donate.jpg") center center/cover no-repeat;
+  background: url("../img/kidney.jpg") center center/cover no-repeat;
+}
+main.donate:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(37, 37, 37, 0.6352941176);
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+main.donate .inner-box {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: end;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 5rem;
+}
+main.donate .inner-box h1 {
+  font-size: 4rem;
+  color: #fff;
 }
 
 footer .bottom-footer .logo {
@@ -423,6 +518,10 @@ footer .bottom-footer p {
   display: inline;
 }
 
+.current {
+  border-bottom: 2px solid #fff;
+}
+
 .sticky {
   position: fixed;
   top: 0;
@@ -434,6 +533,9 @@ footer .bottom-footer p {
 }
 
 @media (max-width: 456px) {
+  .text-cut {
+    width: 80%;
+  }
   nav .donate {
     background-color: #ff0000;
     margin-left: 1rem;
@@ -449,12 +551,39 @@ footer .bottom-footer p {
   .report .row .col-sm {
     padding-top: 2rem;
   }
+  section.news-video .col-vid {
+    height: 200px;
+  }
+  section.news-video .col-vid iframe {
+    height: 100% !important;
+  }
+  main.short .inner-box h1 {
+    font-size: 2rem !important;
+  }
+  main.donate .inner-box h1 {
+    font-size: 2rem;
+  }
 }
 @media (max-width: 765px) {
+  .text-cut {
+    width: 80%;
+  }
   main .hero-text {
     width: 22rem;
   }
   main .hero-text h1 {
     font-size: 2.5rem;
+  }
+  section.news-video .col-vid {
+    height: 200px;
+  }
+  section.news-video .col-vid iframe {
+    height: 100% !important;
+  }
+  main.short .inner-box h1 {
+    font-size: 2rem !important;
+  }
+  main.donate .inner-box h1 {
+    font-size: 2rem;
   }
 }/*# sourceMappingURL=custom.css.map */

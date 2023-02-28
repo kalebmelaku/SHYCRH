@@ -11,17 +11,145 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles/custom.css" />
     <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon" />
-    <title>ORGANIZATION</title>
+    <title>PROJECTS</title>
 </head>
 
 <body>
-    <header id="include_header"></header>
+    <header>
+        <div class="top-nav-wrapper">
+            <nav>
+                <div class="container-fluid">
+                    <div class="links-social py-1">
+                        <a class="fs-3" href="https://www.facebook.com/jjushyrh"><i
+                                class="fa-brands fa-facebook fa-1x"></i></a>
+                        <a class="fs-3" href="http://www.twitter.com/jureferal "><i
+                                class="fa-brands fa-twitter fa-1x"></i></a>
+                        <a class="fs-3" href="http://t.me/jjushyrh"><i class="fa-brands fa-telegram fa-1x"></i></a>
+                        <a class="fs-3" href="http://www.instagram.com/jjushyrh"><i
+                                class="fa-brands fa-instagram fa-1x"></i></a>
+                        <a class="fs-3" href="https://www.youtube.com/@sheikhhassanyabarereferral4347"><i
+                                class="fa-brands fa-1x fa-youtube"></i></a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <nav class="navbar navbar-expand-lg" id="navbar">
+            <div class="container-fluid">
+                <a href="#" class="navbar-brand">
+                    <img src="./img/JJUSHYCSH LOGO WHITE.png" alt="logo" width="250" height="65" class="d-inline-block align-text-top" />
+                </a>
+                <!-- <h2 class="text-white">SHYCRH</h2> -->
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon">
+                        <i class="fas fa-bars" style="color:#fff; font-size:28px;"></i>
+                    </span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav ms-auto"></div>
+                    <div class="navbar-nav">
+                        <ul class="navbar-nav d-flex align-items-center justify-content-center">
+                            <li class="nav-item">
+                                <a href="index.html" class="nav-item nav-link">HOME</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    WHO WE ARE
+                                </a>
+                                <ul class="dropdown-menu bg-custom">
+                                    <li class="py-1">
+                                        <a class="dropdown-item text-light" href="whoweare.html">WHO WE ARE</a>
+                                    </li>
+                                    <li class="py-1">
+                                        <a class="dropdown-item text-light" href="organization.html">THE
+                                            ORGANIZATION</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link current dropdown-toggle" href="#" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    WHAT WE DO
+                                </a>
+                                <ul class="dropdown-menu bg-custom">
+                                    <li class="py-1">
+                                        <a class="dropdown-item text-light" href="whatwedo.html">WHAT WE DO</a>
+                                    </li>
+                                    <li class="py-1">
+                                        <a class="dropdown-item text-light" href="projects.html">OUR PROJECTS</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link" href="workwithus.html">
+                                    WORK WITH US
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                				<!-- <a href="donate.html" class="nav-item nav-link donate">DONATE</a> -->
+				<button type="button" class="nav-item nav-link donate" data-toggle="modal" data-target="#exampleModal">
+					Login
+				  </button>
+			</div>
+		</nav>
+
+
+
+
+	</header>
+
+
+
+<!-- Button trigger modal -->
+
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	<div class="modal-dialog" role="document">
+	  <div class="modal-content">
+		<div class="modal-header">
+		  <h5 class="modal-title" id="exampleModalLabel">Login Page</h5>
+		  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			<span aria-hidden="true">&times;</span>
+		  </button>
+		</div>
+		<div class="modal-body">
+			<form>
+				<div class="form-group">
+				  <label for="exampleInputEmail1">Email address</label>
+				  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+				  
+				</div>
+				<div class="form-group">
+				  <label for="exampleInputPassword1">Password</label>
+				  <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+				</div>
+				<button type="submit" class="mt-2 btn btn-primary btn-login">Submit</button>
+			  </form>
+		</div>
+	  </div>
+	</div>
+  </div>
+
+
+
+    </header>
     <section class="todo">
         <div class="container-sm">
             <div class="row py-4 gap-4 mx-auto">
                 <div class="col-sm py-2 mx-auto">
+                    <div class="mx-auto text-center">
+                        <img  src="./img/dispatch.png" alt="">
+                    </div>
                     <h3>DISPATCH CENTER</h3>
                     <P>Ambulance Pooled</P>
                     <p>Total of 4 Ambulances</p>
@@ -29,6 +157,9 @@
                     <p>Call center with free short code - 9551</p>
                 </div>
                 <div class="col-sm py-2 mx-auto">
+                    <div class="mx-auto text-center">
+                        <img src="./img/emergency.png" alt="">
+                    </div>
                     <h3>EMERGENCY UNIT</h3>
                     <P>CRITICAL CARE SERVICE BASED ON SEVERITY</P>
                     <p>ICU SERVICE</p>
@@ -39,10 +170,16 @@
                     <p>STAFF RESTING ROOMS</p>
                 </div>
                 <div class="col-sm py-2 mx-auto">
+                    <div class="mx-auto text-center">
+                        <img  src="./img/cash.png" alt="">
+                    </div>
                     <h3>CASH & BEAUTIFICATION</h3>
                     <p>CLIENT FRIENDLY AND CALMING ENVIRONMENT</p>
                 </div>
                 <div class="col-sm py-2 mx-auto">
+                    <div class="mx-auto text-center">
+                        <img  src="./img/digital.png" alt="">
+                    </div>
                     <h3>DIGITALIZATION</h3>
                     <P>paper free hospital service</P>
                     <P>improved data management</P>
@@ -52,6 +189,9 @@
             </div>
             <div class="row py-4 gap-4 mx-auto">
                 <div class="col-sm py-2 mx-auto">
+                    <div class="mx-auto text-center">
+                        <img  src="./img/diagnosis.png" alt="">
+                    </div>
                     <h3>DIAGNOSTICS</h3>
                     <p>Improving access to top specialized referred out services</p>
                     <p>MRI 1.5 TESLA (GE)</p>
@@ -65,6 +205,9 @@
                     <p>MICROBIOLOGY WORKSTATION</p>
                 </div>
                 <div class="col-sm py-2 mx-auto">
+                    <div class="mx-auto text-center">
+                        <img  src="./img/maintenance.png" alt="">
+                    </div>
                     <h3>MAINTENANCE AND RENOVATION</h3>
                     <p>maintaining sanitary & sewerage</p>
                     <p>maintaining cracks</p>
@@ -73,6 +216,9 @@
                     <p>child playing area</p>
                 </div>
                 <div class="col-sm py-2 mx-auto">
+                    <div class="mx-auto text-center">
+                        <img  src="./img/operation.png" alt="">
+                    </div>
                     <h3>OPERATIONAL THEATRE EXPANSION</h3>
                     <p>from 3 to 8 major operational theatre</p>
                     <p>including kids operating theatre</p>
@@ -83,6 +229,9 @@
                     <p>sterilization</p>
                 </div>
                 <div class="col-sm py-2 mx-auto">
+                    <div class="mx-auto text-center">
+                        <img  src="./img/oncology.png" alt="">
+                    </div>
                     <h3>SPECIALTY & SUBSPECIALTY</h3>
                     <p>hepatic clinic</p>
                     <p>oncology unit</p>
@@ -94,6 +243,9 @@
             </div>
             <div class="row py-4 gap-4 mx-auto">
                 <div class="col-sm py-2 mx-auto">
+                    <div class="mx-auto text-center">
+                        <img  src="./img/physio.png" alt="">
+                    </div>
                     <h3>PHYSIOTHERAPY UNIT</h3>
                     <p>walking rail</p>
                     <p>bicycle</p>
@@ -101,6 +253,9 @@
                     <p>vertebral column stimulation</p>
                 </div>
                 <div class="col-sm py-2 mx-auto">
+                    <div class="mx-auto text-center">
+                        <img  src="./img/capacity.png" alt="">
+                    </div>
                     <h3>CAPACITY BUILDING</h3>
                     <P>national integrated emergency medicine</P>
                     <P>basic emergency care & etat</P>
@@ -112,6 +267,9 @@
                     <P>web-based referral system</P>
                 </div>
                 <div class="col-sm py-2 mx-auto">
+                    <div class="mx-auto text-center">
+                        <img  src="./img/fuel.png" alt="">
+                    </div>
                     <h3>FUEL STATION</h3>
                     <p>minimized ambulance queue at local fuel station</p>
                 </div>
@@ -123,11 +281,15 @@
 
 </html>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-    crossorigin="anonymous"></script>
+	integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+	crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
-    integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
+	crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+	<!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script> -->
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 <script>
     $(function () {
         $("#include_header").load("header.html");

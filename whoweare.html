@@ -11,24 +11,148 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
 		integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
 		crossorigin="anonymous" referrerpolicy="no-referrer" />
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="./styles/custom.css" />
 	<link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon" />
 	<title>WHO WE ARE</title>
 </head>
 
 <body>
-	<header id="include_header"></header>
-	<main class="whoweare">
+	<header>
+		<div class="top-nav-wrapper">
+			<nav>
+				<div class="container-fluid">
+					<div class="links-social py-1">
+						<a class="fs-3" href="https://www.facebook.com/jjushyrh"><i
+								class="fa-brands fa-facebook fa-1x"></i></a>
+						<a class="fs-3" href="http://www.twitter.com/jureferal "><i
+								class="fa-brands fa-twitter fa-1x"></i></a>
+						<a class="fs-3" href="http://t.me/jjushyrh"><i class="fa-brands fa-telegram fa-1x"></i></a>
+						<a class="fs-3" href="http://www.instagram.com/jjushyrh"><i
+								class="fa-brands fa-instagram fa-1x"></i></a>
+						<a class="fs-3" href="https://www.youtube.com/@sheikhhassanyabarereferral4347"><i
+								class="fa-brands fa-1x fa-youtube"></i></a>
+					</div>
+				</div>
+			</nav>
+		</div>
+		<nav class="navbar navbar-expand-lg" id="navbar">
+			<div class="container-fluid">
+				<a href="#" class="navbar-brand">
+					<img src="./img/JJUSHYCSH LOGO WHITE.png" alt="logo" width="250" height="65" class="d-inline-block align-text-top" />
+				</a>
+				<!-- <h2 class="text-white">SHYCRH</h2> -->
+				<button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+					<span class="navbar-toggler-icon">
+						<i class="fas fa-bars" style="color:#fff; font-size:28px;"></i>
+					</span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarCollapse">
+					<div class="navbar-nav ms-auto"></div>
+					<div class="navbar-nav">
+						<ul class="navbar-nav d-flex align-items-center justify-content-center">
+							<li class="nav-item">
+								<a href="index.html" class="nav-item nav-link">HOME</a>
+							</li>
+							<li class="nav-item dropdown">
+								<a class="nav-link current dropdown-toggle" href="#" role="button"
+									data-bs-toggle="dropdown" aria-expanded="false">
+									WHO WE ARE
+								</a>
+								<ul class="dropdown-menu bg-custom">
+									<li class="py-1">
+										<a class="dropdown-item text-light" href="whoweare.html">WHO WE ARE</a>
+									</li>
+									<li class="py-1">
+										<a class="dropdown-item text-light" href="organization.html">THE
+											ORGANIZATION</a>
+									</li>
+								</ul>
+							</li>
+							<li class="nav-item dropdown">
+								<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+									aria-expanded="false">
+									WHAT WE DO
+								</a>
+								<ul class="dropdown-menu bg-custom">
+									<li class="py-1">
+										<a class="dropdown-item text-light" href="whatwedo.html">WHAT WE DO</a>
+									</li>
+									<li class="py-1">
+										<a class="dropdown-item text-light" href="projects.html">OUR PROJECTS</a>
+									</li>
+								</ul>
+							</li>
+							<li class="nav-item dropdown">
+							</li>
+							<li class="nav-item dropdown">
+								<a class="nav-link" href="workwithus.html">
+									WORK WITH US
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<!-- <a href="donate.html" class="nav-item nav-link donate">DONATE</a> -->
+				<button type="button" class="nav-item nav-link donate" data-toggle="modal" data-target="#exampleModal">
+					Login
+				  </button>
+			</div>
+		</nav>
+
+
+
+
+	</header>
+
+
+
+<!-- Button trigger modal -->
+
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	<div class="modal-dialog" role="document">
+	  <div class="modal-content">
+		<div class="modal-header">
+		  <h5 class="modal-title" id="exampleModalLabel">Login Page</h5>
+		  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			<span aria-hidden="true">&times;</span>
+		  </button>
+		</div>
+		<div class="modal-body">
+			<form>
+				<div class="form-group">
+				  <label for="exampleInputEmail1">Email address</label>
+				  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+				  
+				</div>
+				<div class="form-group">
+				  <label for="exampleInputPassword1">Password</label>
+				  <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+				</div>
+				<button type="submit" class="mt-2 btn btn-primary btn-login">Submit</button>
+			  </form>
+		</div>
+	  </div>
+	</div>
+  </div>
+
+
+
+
+	</header>
+	<main class="whoweare short text-cut">
+		<img src="./img/whoweare.jpg" alt="">
 		<div class="container-sm my-0">
 			<div class="inner-box">
-				<h1 class="title text-light my-0 ">
-					OVER 12 MILLION
+				<h1 class="title text-light text-center my-0 ">
+					Rehabilitative and supportive services for all patients on referral
+					basis
 				</h1>
-				<p class="subtitle my-0 text-light fs-4">
-					These are the people we have treated since 1994 in 20
-					countries.
-				</p>
-				<a href="./story.html" class="btn py-3 my-3 px-5">Our History</a>
+		
 			</div>
 		</div>
 	</main>
@@ -41,31 +165,24 @@
 
 				<h2 class="title text-custom py-4">
 					<font style="vertical-align: inherit;">
-						<font style="vertical-align: inherit;">We heal one person every minute. </font>
-						<font style="vertical-align: inherit;">Since 1994.</font>
+						<font style="vertical-align: inherit;">At the center of Jigjiga City. </font>
+
 					</font>
 				</h2>
 
 				<div class="main-content-text">
 					<p class="h5 text-cut mx-auto" style="text-align: center;">
 						<font style="vertical-align: inherit;">
-							<font style="vertical-align: inherit;">EMERGENCY is an independent and neutral association,
-								founded in 1994 to offer free, high-quality medical-surgical care to victims of war,
-								landmines and poverty.</font>
+							<font style="vertical-align: inherit;">JigJiga University, Sheik Hassen Yabare Comprehensive
+								Specialized Hospital is the first
+								and largest specialized hospital and medical school linked in Somali Regional State of
+								Ethiopia.
+								It is at center of Jigjiga city which is located 610 Km away from Addis Ababa in the
+								Eastern
+								part of Ethiopia</font>
 						</font>
 					</p>
-					<p class="h5 py-4" style="text-align: center;">
-						<font style="vertical-align: inherit;">
-							<font style="vertical-align: inherit;">EMERGENCY promotes a culture of peace, solidarity and
-								respect for human rights.</font>
-						</font>
-					</p>
-					<p style="text-align: center;">
-						<font style="vertical-align: inherit;">
-							<font style="vertical-align: inherit;">Our commitment is possible thanks to the contribution
-								of thousands of volunteers and supporters who choose to stay with us every day.</font>
-						</font>
-					</p>
+					
 				</div>
 
 			</div>
@@ -76,31 +193,9 @@
 	<section class="priciples py-4 text-center bg-light">
 		<div class="container-sm">
 			<h4>CORE VALUE AND PRINCIPLES</h4>
-			<!-- <P>We believe that the right to care is a fundamental human right, therefore we want healthcare based on: -->
+		
 			</P>
-			<!-- <div class="row my-4 gap-4">
-				<div class="col-sm">
-					<h3 class="py-4">EQUALITY</h3>
-					<p class="lh-lg">Every human being has the right to be treated regardless of economic and social
-						condition,
-						gender, ethnicity, language, religion and opinions. The best care made possible by progress and
-						medical science must be provided equally and without discrimination to all patients</p>
-				</div>
-				<div class="col-sm">
-					<h3 class="py-4">QUALITY</h3>
-					<p class="lh-lg">High-quality health systems must be based on everyone's needs and be adapted to
-						advances in
-						medical science. They cannot be oriented, structured or determined by power groups or companies
-						involved in the health industry.</p>
-				</div>
-				<div class="col-sm">
-					<h3 class="py-4">SOCIAL RESPONSIBILITY</h3>
-					<p class="lh-lg">Governments must prioritize the health and well-being of their citizens, and
-						allocate the
-						necessary human and economic resources to this end. Services provided by national health systems
-						and humanitarian health projects must be free and accessible to all.</p>
-				</div>
-			</div> -->
+			
 			<div class="row my-4 gap-4">
 				<div class="col-sm py-3">
 					<h3>Transparency and accountability</h3>
@@ -143,172 +238,32 @@
 			</div>
 		</div>
 	</section>
-	<section class="text-center py-4 our_goals">
-		<div class="container-sm">
-			<h4 class="py-5">OUR GOALS</h4>
-			<div class="row gap-4">
-				<div class="col-sm">
-					<h3>FREE AND QUALITY CARE</h3>
-					<img src="./img/cure.png" alt="">
-					<p>We offer free , high-quality medical and surgical care to victims of war, landmines and poverty.
-					</p>
-					<a href="./whatwedo.html" class="btn">WHAT DO WE DO</a>
-				</div>
-				<div class="col-sm">
-					<h3>RIGHTS-BASED MEDICINE</h3>
-					<img src="./img/balance.png" alt="">
-					<p>The right to be treated is a fundamental and inalienable right of all , without any
-						discrimination</p>
-					<a href="#" class="btn">MANIFEST</a>
-				</div>
-				<div class="col-sm">
-					<h3>SPREAD A CULTURE OF PEACE</h3>
-					<img src="./img/hand_shake.png" alt="">
-					<p>We have been actively promoting a culture of peace , solidarity and respect for human rights
-						since our inception .</p>
-					<a class="btn" href="#">CULTURE OF PEACE</a>
-				</div>
-				<div class="col-sm">
-					<h3>ABOLITION OF WAR</h3>
-					<img src="./img/peace.png" alt="">
-					<p>We see the horrors of war every day , we treat them, we tell them. But our goal is to abolish it
-						.</p>
-					<a href="#" class="btn">VIDEO</a>
-				</div>
-			</div>
-		</div>
-	</section>
-	<section class="how_we_operate text-center py-4 bg-light">
+	
+	<section class="how_we_operate py-4 bg-light">
 		<div class="container-sm">
 
-			<h4 class="py-4">HOW WE OPERATE</h4>
-			<p class="text-cut mx-auto">All EMERGENCY structures are designed, built and managed by specialized
-				international staff, also engaged
-				in
-				the training of local personnel. In order for everyone to have the right to free medical care,
-				EMERGENCY:
+			<h4 class="py-4 text-center">THE HOSPITAL'S SERVICES</h4>
+			<p class="text-cut mx-auto">The Hospital has up to 355 beds capacity (with currently 291 functional beds), 4
+				major operation theatres (currently it is under renovation and it will be upgraded to 8 major theatres,)
+				and Cesarean Section (C/S) rooms with two operational theatres.
 			</p>
 			<div class="row py-4">
 				<div class="col-sm">
-					<p>It offers completely free assistance</p>
-					<hr>
-					<p>It guarantees care to anyone in need, without political, ideological or religious discrimination
+					<p>The hospital is designed to provide tertiary care services related on preventive, diagnostic,
+						curative, therapeutic, rehabilitative and support services for all patients on referral basis.
+						Currently, it also provides primary and secondary care services to all citizens.</p>
+				</div>
+				<div class="col-sm">
+					<p>It undertakes training, teaching and research activities for Jigjiga University, college of
+						medicine and health science which include medicine both (undergraduate and post graduate
+						students) and other health science students both (undergraduates and post graduates) and
+						clinical attachments trainings for students from other health science colleges in the region.
 					</p>
-					<hr>
-				</div>
-				<div class="col-sm">
-					<p>It gives a high quality health response</p>
-					<hr>
-					<p>Train local staff until they achieve complete operational autonomy</p>
-					<hr>
 				</div>
 			</div>
 		</div>
 	</section>
-	<section class="budget py-4 no-border alternative-theme" id="cover_chisiamo">
-		<div class="container-sm bottom-position center-alignment">
-			<div class="inner-box px-5 mx-5">
-				<h2 class="title">
-					<font style="vertical-align: inherit;">
-						<font style="vertical-align: inherit;">8%</font>
-					</font>
-				</h2>
-				<p class="subtitle text-cut">
-					<font style="vertical-align: inherit;">
-						<font style="vertical-align: inherit;">The expenses for the structure represent 8% of the
-							total: our commitment to reduce them as much as possible allows us to </font>
-					</font><strong>
-						<font style="vertical-align: inherit;">
-							<font style="vertical-align: inherit;">allocate 86% of what we collect to our hospitals
-								and to the promotion of a culture of peace. </font>
-						</font>
-					</strong>
-					<font style="vertical-align: inherit;">
-						<font style="vertical-align: inherit;">We invest the remaining 6% to raise other funds to
-							support our projects.</font>
-					</font>
-				</p>
-				<a class="main-button btn text-custom py-3 px-4" href="#" target="_self">
-					Budget and use of funds </a>
-			</div>
-		</div>
-	</section>
-
-	<section class="report">
-		<div class="container-fluid">
-			<div class="row">
-				<div class="col-sm px-0 d-flex align-items-start justify-content-center flex-column">
-					<h4 class="text-cut mx-auto">Annual Report</h4>
-					<p class="text-cut mx-auto">Every year we publish an updated report on our humanitarian programmes,
-						complete with
-						descriptions of each facility, data on the assistance offered to patients, the funds raised and
-						the culture of peace activities.</p>
-					<div class="text-cut mx-auto">
-						<a href="#" class="btn">REPORTS 2021</a>
-					</div>
-				</div>
-				<div class="col-sm px-0">
-					<img src="./img/report2021.jpg" alt="">
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-sm px-0">
-					<img src="./img/social.jpg" alt="">
-				</div>
-				<div class="col-sm px-0 d-flex align-items-start justify-content-center flex-column">
-					<h4 class="text-cut mx-auto">Social Report</h4>
-					<p class="text-cut mx-auto">We measure and communicate the impact of our activities and the results
-						achieved in our projects
-						through a narrative, managerial and financial story.</p>
-					<div class="text-cut mx-auto">
-						<a href="#" class="btn">SOCIAL REPORTS 2021</a>
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-sm px-0 d-flex align-items-start justify-content-center flex-column">
-					<h4 class="text-cut mx-auto">The Organization</h4>
-					<p class="text-cut mx-auto">We are recognized as a partner NGO of the United Nations - Department of
-						Public Information and
-						we are part of the Economic and Social Council as an association in Special Consultative Status
-						.</p>
-					<div class="text-cut mx-auto">
-						<a href="#" class="btn">STATUTE AND BODIES</a>
-					</div>
-				</div>
-				<div class="col-sm px-0">
-					<img src="./img/staff.jpg" alt="">
-				</div>
-
-			</div>
-		</div>
-	</section>
-	<section class="count bg-light text-center py-5">
-		<div class="container-sm">
-			<div class="row">
-				<div class="col-sm">
-					<h1 class="text=custom">Over 60</h1>
-					<p>Active Projects</p>
-				</div>
-				<div class="col-sm">
-					<h1 class="text=custom">154</h1>
-					<p>international staff left on mission in 2019</p>
-				</div>
-			</div>
-		</div>
-	</section>
-	<section class="thanks py-5 text-center">
-		<div class="container-sm">
-			<div class="inner-box">
-				<h2>All these activities are also possible thanks to you</h2>
-				<p class="text-cut mx-auto">Your contribution, together with that of thousands of other people, allows
-					us to treat those in need
-					every day. Good and free.</p>
-				<a href="#" class="btn">SUPPORT EMERGENCY WITH DONATION</a>
-			</div>
-		</div>
-	</section>
-
+	
 
 
 	<footer class="bg-light py-5" id="include_footer"></footer>
@@ -321,6 +276,10 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
 	integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
 	crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+	<!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script> -->
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 <script>
 	$(function () {
 		$("#include_header").load("header.html");

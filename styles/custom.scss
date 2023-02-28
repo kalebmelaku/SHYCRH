@@ -7,7 +7,10 @@ $white: #fff;
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+	font-family: 'Ubuntu', sans-serif;
 }
+
+
 body{
 	overflow-x: hidden;
 }
@@ -30,12 +33,23 @@ body{
 		color: $white !important;
 	}
 }
+.btn-login{
+	transition: all 500ms !important;
+	background-color: $blue ;
+	&:hover {
+		background-color: $blue !important;
+		color: $white !important;
+	}
+}
 .dropdown:hover .dropdown-menu {
 	display: block !important;
 	margin-top: 0; 
 }
 .text-cut{
 	width: 50%;
+}
+.text-cut-md{
+	width: 70%;
 }
 .top-nav-wrapper {
 	nav {
@@ -73,9 +87,38 @@ body{
 	}
 	.donate {
 		background-color: #ff0000;
-		margin-left: 3rem;
+		margin-left: 2rem;
 		padding: 12px 48px;
 		color: $white;
+		font-weight: bold;
+		border: none;
+		clip-path: polygon(26% 0, 100% 1%, 100% 100%, 0 100%);
+		transition: all 500ms;
+		&:hover{
+			background-color: $white;
+			color: $blue;
+			font-weight: bold;
+		}
+	}
+}
+.middle-footer{
+	.card{
+		.form-inline{
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+	}
+}
+form.appointment{
+	.form-group{
+		width: 100% !important;
+		&:nth-child(even){
+			margin-left: 2rem;
+		}
+	}
+	input, select{
+		width: 100% !important;
 	}
 }
 main {
@@ -87,13 +130,17 @@ main {
 		width: 100%;
 		height: 100%;
 		position: relative;
-		background: url("../img/surgery.jpg") no-repeat center center/cover;
+		// background: url("../img/surgery.jpg") no-repeat center center/cover;
+		img{
+			width: 100%;
+			height: 100%;
+		}
 		&:before {
 			content: "";
 			position: absolute;
 			top: 0;
 			left: 0;
-			background: #252525a1;
+			background: #25252565;
 			width: 100%;
 			height: 100%;
 			z-index: 1;
@@ -223,6 +270,10 @@ section {
 			p{
 				border-bottom: 1px solid #444;
 				padding-bottom: .5rem;
+				//display: inline-block !important;
+			}
+			.other_services{
+				display: none !important;
 			}
 		}
 	}
@@ -268,6 +319,10 @@ section {
 				}
 				img{
 					width: 100%;
+					height: 100%;
+				}
+				p{
+					line-height: 30px;
 				}
 			}
 		}
@@ -326,14 +381,14 @@ section {
 			height: 500px;
 		}
 	}
-	&.countries{
+	&.pay_option{
 		.row{
 			.col-sm{
 				margin: 2rem 0;
 			}
 			img{
-				width: 80%;
-				margin: 2rem 0;
+				//width: 80%;
+				margin: 1rem 0;
 			}
 		}
 		p{
@@ -351,21 +406,50 @@ section {
 		background: url(https://en.emergency.it/wp-content/uploads/2017/07/EMERGENCY-organization-header-02.jpg) no-repeat center center/cover;
 		
 	}
+	&.structure{
+		.struct_container{
+			img{
+				width: 100%;
+			}
+		}
+	}
 	&.todo{
 		p{
 			text-transform: capitalize;
 		}
 		.col-sm{
 			background-color: #eee;
+			//border-top-left-radius: 50%;
+			div{
+				width: 100%;
+				padding: 0 !important;
+				img{
+					width: 100%;
+				}
+			}
+		}
+	}
+	&.news-video{
+		.col-vid{
+			height: 400px;	
+			iframe{
+				height: 100% !important;
+			}
 		}
 	}
 }
 main {
 	&.whoweare{
 		width: 100%;
-		background: url('../img/whoweare.jpg') center center/cover no-repeat;
+		//background: url('../img/whoweare.jpg') center center/cover no-repeat;
 		min-height: 600px;
 		position: relative;
+		img{
+			position: absolute;
+			z-index: -2;
+			width: 100%;
+			height: 100%;
+		}
 		&:before{
 			content: "";
 			position: absolute;
@@ -385,9 +469,13 @@ main {
 			justify-content: center;
 			padding-top: 5rem;
 			h1{
-				font-size: 5rem;
+				font-size: 4rem;
 			}
 		}
+	}
+	&.short{
+		min-height: 300px;
+		max-height: 300px;
 	}
 	&.what_can_you_do{
 		max-height: 330px !important;
@@ -409,14 +497,14 @@ main {
 	}
 	&.workwithus{
 		max-height: 330px !important;
-		background: url('../img/workwithus.jpg') center center/cover no-repeat;
+		//background: url('../img/workwithus.jpg') center center/cover no-repeat;
 		&:before{
 			background: #252525a7;
 		}
 		.inner-box{
 			color: $white;
 			align-items: start;
-			width: 50%;
+			//width: 50%;
 			h2{
 				font-size: 4rem;
 			}
@@ -450,7 +538,30 @@ main {
 		min-height: 330px !important;
 		max-height: 400px !important;
 		width: 100%;
-		background: url('../img/donate.jpg') center center/cover no-repeat;
+		background: url('../img/kidney.jpg') center center/cover no-repeat;
+		&:before{
+			content: "";
+			position: absolute;
+			top: 0;
+			left: 0;
+			background: #252525a2;
+			width: 100%;
+			height: 100%;
+			z-index: 1;
+		}
+		.inner-box{
+			position: relative;
+			z-index: 2;
+			display: flex;
+			align-items: end;
+			flex-direction: column;
+			justify-content: center;
+			padding-top: 5rem;
+			h1{
+				font-size: 4rem;
+				color: #fff;
+			}
+		}
 	}
 }
 footer{
@@ -470,6 +581,9 @@ footer{
 	}
 }
 
+.current{
+	border-bottom: 2px solid $white;
+}
 .sticky {
 	position: fixed;
 	top: 0;
@@ -480,6 +594,9 @@ footer{
 	padding-top: 60px;
 }
 @media (max-width: 456px) {
+	.text-cut{
+		width: 80%;
+	}
 	nav {
 		.donate {
 			background-color: #ff0000;
@@ -503,13 +620,61 @@ footer{
 			}
 		}
 	}
+	section.news-video{
+		.col-vid{
+			height: 200px;	
+			iframe{
+				height: 100% !important;
+			}
+		}
+	}
+	main.short{
+		.inner-box{
+			h1{
+				font-size: 2rem !important;
+			}
+		}
+	}
+	main.donate{
+		.inner-box{
+			h1{
+				font-size: 2rem;
+			}
+		}
+	}
 }
 @media (max-width: 765px) {
+	.text-cut{
+		width: 80%;
+	}
 	main {
 		.hero-text {
 			width: 22rem;
 			h1 {
 				font-size: 2.5rem;
+			}
+		}
+	}
+	section.news-video{
+		.col-vid{
+			height: 200px;	
+			iframe{
+				height: 100% !important;
+			}
+		}
+	}
+	main.short{
+		.inner-box{
+
+			h1{
+				font-size: 2rem !important;
+			}
+		}
+	}
+	main.donate{
+		.inner-box{
+			h1{
+				font-size: 2rem;
 			}
 		}
 	}

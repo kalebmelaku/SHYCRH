@@ -10,20 +10,143 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
 		integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
 		crossorigin="anonymous" referrerpolicy="no-referrer" />
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="./styles/custom.css" />
 	<link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon" />
 	<title>Home</title>
 </head>
 
 <body>
-	<header id="include_header"></header>
+	<!-- <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js"></script> -->
+	<header>
+		<div class="top-nav-wrapper">
+			<nav>
+				<div class="container-fluid">
+					<div class="links-social py-1">
+						<a class="fs-3" href="https://www.facebook.com/jjushyrh"><i
+								class="fa-brands fa-facebook fa-1x"></i></a>
+						<a class="fs-3" href="http://www.twitter.com/jureferal "><i
+								class="fa-brands fa-twitter fa-1x"></i></a>
+						<a class="fs-3" href="http://t.me/jjushyrh"><i class="fa-brands fa-telegram fa-1x"></i></a>
+						<a class="fs-3" href="http://www.instagram.com/jjushyrh"><i
+								class="fa-brands fa-instagram fa-1x"></i></a>
+						<a class="fs-3" href="https://www.youtube.com/@sheikhhassanyabarereferral4347"><i
+								class="fa-brands fa-1x fa-youtube"></i></a>
+					</div>
+				</div>
+			</nav>
+		</div>
+		<nav class="navbar navbar-expand-lg" id="navbar">
+			<div class="container-fluid">
+				<a href="#" class="navbar-brand">
+					<img src="./img/JJUSHYCSH LOGO WHITE.png" alt="logo" width="150" height="40" class="d-inline-block align-text-top" />
+				</a>
+				<!-- <h2 class="text-white">Sheik Hassen Yabare Comperhensive Specialized Hospital</h2> -->
+				<button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+					<span class="navbar-toggler-icon">
+						<i class="fas fa-bars" style="color:#fff; font-size:28px;"></i>
+					</span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarCollapse">
+					<div class="navbar-nav ms-auto"></div>
+					<div class="navbar-nav">
+						<ul class="navbar-nav d-flex align-items-center justify-content-center">
+							<li class="nav-item">
+								<a href="index.html" class="nav-item current nav-link">HOME</a>
+							</li>
+							<li class="nav-item dropdown">
+								<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+									aria-expanded="false">
+									WHO WE ARE
+								</a>
+								<ul class="dropdown-menu bg-custom">
+									<li class="py-1">
+										<a class="dropdown-item text-light" href="whoweare.html">WHO WE ARE</a>
+									</li>
+									<li class="py-1">
+										<a class="dropdown-item text-light" href="organization.html">THE
+											ORGANIZATION</a>
+									</li>
+								</ul>
+							</li>
+							<li class="nav-item dropdown">
+								<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+									aria-expanded="false">
+									WHAT WE DO
+								</a>
+								<ul class="dropdown-menu bg-custom">
+									<li class="py-1">
+										<a class="dropdown-item text-light" href="whatwedo.html">WHAT WE DO</a>
+									</li>
+									<li class="py-1">
+										<a class="dropdown-item text-light" href="projects.html">OUR PROJECTS</a>
+									</li>
+								</ul>
+							</li>
+							<li class="nav-item dropdown">
+							</li>
+							<li class="nav-item dropdown">
+								<a class="nav-link" href="workwithus.html">
+									WORK WITH US
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<!-- <a href="donate.html" class="nav-item nav-link donate">DONATE</a> -->
+				<button type="button" class="nav-item nav-link donate" data-toggle="modal" data-target="#exampleModal">
+					Login
+				  </button>
+			</div>
+		</nav>
+	</header>
+
+
+
+<!-- Button trigger modal -->
+
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	<div class="modal-dialog" role="document">
+	  <div class="modal-content">
+		<div class="modal-header">
+		  <h5 class="modal-title" id="exampleModalLabel">Login Page</h5>
+		  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			<span aria-hidden="true">&times;</span>
+		  </button>
+		</div>
+		<div class="modal-body">
+			<form>
+				<div class="form-group">
+				  <label for="exampleInputEmail1">Email address</label>
+				  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+				  
+				</div>
+				<div class="form-group">
+				  <label for="exampleInputPassword1">Password</label>
+				  <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+				</div>
+				<button type="submit" class="mt-2 btn btn-primary btn-login">Submit</button>
+			  </form>
+		</div>
+	  </div>
+	</div>
+  </div>
+
+
+
 	<main>
-		<div class="bg"></div>
+		<div class="bg">
+			<img src="./img/bg.jpg" alt="">
+		</div>
 		<div class="hero-text">
-			<!-- <h1>Treating a patient every minute since 1994.</h1> -->
-			<h1>Largest specialized hospital and medical school in Somali Regional State </h1>
+	
+			<h1>Largest Specialized Hospital and Medical School in Somali Regional State </h1>
 			<h5>
-				<span>SHYCRH </span>provides broad primary and secondary care services to the
+				<span>Sheik Hassen Yabare Comperhensive Specialized Hospital </span>provides broad primary and secondary care services to the
 				community
 			</h5>
 			<a href="./supportus.html" class="btn bg-light text-custom mt-4">SUPPORT OUR WORK</a>
@@ -33,18 +156,20 @@
 		id="t-large-width">
 		<div class="container-sm">
 			<h1 class="title text-custom text-center">
-				We have treated over 12 million patients.
+				Largest specialized hospital at the heart of Jigjiga City.
 			</h1>
 
 			<div class="main-content-text py-4">
 				<p style="text-align: center" class="py-4 text-cut mx-auto">
 					<strong>The hospital has designed to provide tertiary care services related on preventive,
-						diagnostic, curative, therapeutic, rehabilitative and support services for all patients on referral
+						diagnostic, curative, therapeutic, rehabilitative and support services for all patients on
+						referral
 						basis. Since the hospital is armed with modern medical equipment and skilled specialist
 						doctors</strong>
 				</p>
 				<p style="text-align: center" class="text-cut mx-auto">
-					<span style="font-size: 18px">It also undertakes training, teaching and research activities for Jigjiga
+					<span style="font-size: 18px">It also undertakes training, teaching and research activities for
+						Jigjiga
 						University, college of medicine and health science including internship training for students
 						from other health science colleges in the region</span>
 				</p>
@@ -52,41 +177,345 @@
 			</div>
 		</div>
 	</section>
-	<!-- <section style="padding-top: 30px; padding-bottom: 0px" class="count">
-		<div class="container-fluid py-5 text-center">
-			<div class="row py-4">
-				<div class="col-sm">
-					<h1 class="text-custom">8</h1>
-					<p>Countries we're working in</p>
+
+	<section style="padding-top: 30px; padding-bottom: 30px" class="module text news-video no-border base-theme" id="">
+		<div class="container-sm">
+			<h2 class="title text-center">
+				WATCH RECENT NEWS
+			</h2>
+			<div class="row py-4 gap-4">
+				<div class="col-sm py-3 col-vid">
+					<iframe
+						src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2Fjjushyrh%2Fvideos%2F538158531673215%2F&show_text=true&width=560&t=0"
+						width="100%" height="100%" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
+						allowfullscreen="true"
+						allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+						allowFullScreen="true"></iframe>
 				</div>
-				<div class="col-sm">
-					<h1 class="text-custom">12,000,000</h1>
-					<p>Patients treated</p>
+				<div class="col-sm py-3 col-vid">
+					<iframe
+						src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2Fjjushyrh%2Fvideos%2F873175153830034%2F&show_text=true&width=560&t=0"
+						width="100%" height="100%" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
+						allowfullscreen="true"
+						allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+						allowFullScreen="true"></iframe>
+				</div>
+				<div class="col-sm py-3 col-vid">
+					<iframe
+						src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2Fjjushyrh%2Fvideos%2F8618879831486463%2F&show_text=true&width=560&t=0"
+						width="100%" height="100%" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
+						allowfullscreen="true"
+						allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+						allowFullScreen="true"></iframe>
 				</div>
 			</div>
-		</div>
-	</section> -->
-	<section style="padding-top: 30px; padding-bottom: 30px" class="module text no-border base-theme" id="">
-		<div class="container-sm">
-			<h2 class="title"></h2>
+			<div class="row py-4 gap-4">
+				<div class="col-sm py-3 col-vid">
+					<iframe
+						src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2FSRTVSomali%2Fvideos%2F906734003581312%2F&show_text=true&width=560&t=0"
+						width="100%" height="100%" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
+						allowfullscreen="true"
+						allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+						allowFullScreen="true"></iframe>
+				</div>
 
-			<div class="main-content-text">
-				<!-- <h3 style="text-align: center">
-					<strong>WE CAN MAKE PEACE COME TRUE</strong>
-				</h3>
-				<p class="text-center text-cut mx-auto">
-					Gino Strada, our founder, used to say&nbsp;<strong>“to create a world without war, we have to
-						imagine it
-						first”</strong>. So we did. We turned his words into reality, thanks to the
-					Artificial Intelligence. And by doing so, we wish that together, in
-					2023, we can make peace come true.&nbsp;For all.
-				</p> -->
-				<p style="text-align: center">
-					<iframe loading="lazy" title="YouTube video player" src="https://www.youtube.com/embed/FziDH1tgdXs"
-						width="560" height="315" frameborder="0" allowfullscreen="allowfullscreen"
-						style="width: 100%"></iframe>
-				</p>
-				<p>&nbsp;</p>
+				<div class="col-sm py-3 col-vid">
+					<iframe
+						src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2Fjjushyrh%2Fvideos%2F5487027758071876%2F&show_text=true&width=560&t=0"
+						width="100%" height="100%" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
+						allowfullscreen="true"
+						allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+						allowFullScreen="true"></iframe>
+				</div>
+				<div class="col-sm py-3 col-vid">
+					<iframe
+						src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2Fjjushyrh%2Fvideos%2F3240584836270505%2F&show_text=true&width=560&t=0"
+						width="100%" height="100%" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
+						allowfullscreen="true"
+						allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+						allowFullScreen="true"></iframe>
+				</div>
+			</div>
+			<div class="row py-4 gap-4">
+
+				<div class="col-sm py-3 col-vid">
+					<iframe
+						src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2Fjjushyrh%2Fvideos%2F501732655103488%2F&show_text=true&width=560&t=0"
+						width="100%" height="100%" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
+						allowfullscreen="true"
+						allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+						allowFullScreen="true"></iframe>
+				</div>
+				<div class="col-sm py-3 col-vid">
+					<iframe
+						src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fjjushyrh%2Fposts%2Fpfbid029QVthSrzS3mQBk6SoA4ufuBid6NQe1qz4EzvvCyP2iBWH7yhviNB2snoX9os6Bx7l&show_text=true&width=500"
+						width="100%" height="100%" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
+						allowfullscreen="true"
+						allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+				</div>
+				<div class="col-sm py-3 col-vid">
+					<iframe
+						src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2Fjjushyrh%2Fvideos%2F648153356245117%2F&show_text=true&width=560&t=0"
+						width="100%" height="100%" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
+						allowfullscreen="true"
+						allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+						allowFullScreen="true"></iframe>
+				</div>
+			</div>
+			<h2 class="title text-center mt-5">
+				READ RECENT NEWS
+			</h2>
+			<div class="row py-4 gap-4 my-3">
+				<div class="col-sm py-3">
+					<iframe
+						src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fphoto.php%3Ffbid%3D624826139654476%26set%3Da.521016023368822%26type%3D3&show_text=true&width=500"
+						width="100%" height="333" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
+						allowfullscreen="true"
+						allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+					<div class="fb-post"
+						data-href="https://www.facebook.com/jjushyrh/posts/pfbid02VogAnKz6KD7GStLoiQZv6jxPrGnhkyt5pky4WKtzKbVapjGxRLXYjXhSc4m7AUVtl"
+						data-width="100%" data-show-text="true">
+						<blockquote cite="https://www.facebook.com/jjushyrh/posts/624829532987470"
+							class="fb-xfbml-parse-ignore">
+							<p>Xaflad deeq loogu uruurinayo xarunta kalyo-sifaynta cusbitaalka JJU S.H.Yabare
+								Comprehensive Specialized Hospital ayaa...</p>Posted by <a
+								href="https://www.facebook.com/jjushyrh">JJU S.H.Yabare Comprehensive Specialized
+								Hospital</a> on&nbsp;<a
+								href="https://www.facebook.com/jjushyrh/posts/624829532987470">Sunday, January 22,
+								2023</a>
+						</blockquote>
+					</div>
+				</div>
+				<div class="col-sm py-3">
+					<iframe
+						src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fphoto.php%3Ffbid%3D623937463076677%26set%3Da.521016016702156%26type%3D3&show_text=true&width=500"
+						width="100%" height="333" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
+						allowfullscreen="true"
+						allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+					<div class="fb-post"
+						data-href="https://www.facebook.com/jjushyrh/posts/pfbid0nW3Tac7sbnFrGeufiTieSq3F3e1StfgEo7c5Ge6d2wHvJ3wBxCSwjNvQRvpck8L7l"
+						data-width="100%" data-show-text="true">
+						<blockquote cite="https://www.facebook.com/jjushyrh/posts/623950349742055"
+							class="fb-xfbml-parse-ignore">
+							<p>Tababar ku saabsan gargaarka deg-dega ah oo loo qabanayay
+								bulshada hormuudka ah ee qabaleyada maamulka magaalada...</p>Posted by <a
+								href="https://www.facebook.com/jjushyrh">JJU S.H.Yabare Comprehensive Specialized
+								Hospital</a> on&nbsp;<a
+								href="https://www.facebook.com/jjushyrh/posts/623950349742055">Saturday, January 21,
+								2023</a>
+						</blockquote>
+					</div>
+				</div>
+				<div class="col-sm py-3">
+					<iframe
+						src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fphoto.php%3Ffbid%3D598531862283904%26set%3Da.521016023368822%26type%3D3&show_text=true&width=500"
+						width="100%" height="333" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
+						allowfullscreen="true"
+						allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+					<div class="fb-post"
+						data-href="https://www.facebook.com/jjushyrh/posts/pfbid0fWKw2Te2sBCW6QmT9itES1q44o8Vn6jWbELpiZ4Fw8WRKwPsVnSsFNJCekKH13RRl"
+						data-width="500" data-show-text="true">
+						<blockquote cite="https://www.facebook.com/jjushyrh/posts/598532365617187"
+							class="fb-xfbml-parse-ignore">
+							<p>Tababar ku saabsana Nidaamka casriyaynta xogta (Hospital Degitalization) oo kasocday
+								maalmihii udambeyey cusbitaalka...</p>Posted by <a
+								href="https://www.facebook.com/jjushyrh">JJU S.H.Yabare Comprehensive Specialized
+								Hospital</a> on&nbsp;<a
+								href="https://www.facebook.com/jjushyrh/posts/598532365617187">Thursday, December 22,
+								2022</a>
+						</blockquote>
+					</div>
+				</div>
+			</div>
+			<div class="row py-4 gap-4 my-3">
+				<div class="col-sm py-3">
+					<iframe
+						src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fphoto.php%3Ffbid%3D591337669669990%26set%3Da.521016016702156%26type%3D3&show_text=true&width=500"
+						width="100%" height="333" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
+						allowfullscreen="true"
+						allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+					<div class="fb-post"
+						data-href="https://www.facebook.com/jjushyrh/posts/pfbid0EeyNCtHc5s6FoN24PNHadWt9CeHyHc7ntkQyLRq8sHxya2keKpnVYFuq8vFGwMpdl"
+						data-width="100%" data-show-text="true">
+						<blockquote cite="https://www.facebook.com/jjushyrh/posts/591338859669871"
+							class="fb-xfbml-parse-ignore">
+							<p>Waxaa maanta ka furmay cusbitaalka darajada sare ee Sheik Hassen Yabbare(sheik Hassan
+								yabare comprehensive specialized...</p>Posted by <a
+								href="https://www.facebook.com/jjushyrh">JJU S.H.Yabare Comprehensive Specialized
+								Hospital</a> on&nbsp;<a
+								href="https://www.facebook.com/jjushyrh/posts/591338859669871">Thursday, December 15,
+								2022</a>
+						</blockquote>
+					</div>
+				</div>
+				<div class="col-sm py-3">
+					<iframe
+						src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fphoto.php%3Ffbid%3D583201333816957%26set%3Da.521016016702156%26type%3D3&show_text=true&width=500"
+						width="100%" height="333" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
+						allowfullscreen="true"
+						allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+					<div class="fb-post"
+						data-href="https://www.facebook.com/jjushyrh/posts/pfbid0uJdFBNa7PnzT3XGHX3MGi8zfZzw47SSKbkHEBpBDXTN9XkfQw5QHxobBRQSWxsxwl"
+						data-width="100%" data-show-text="true">
+						<blockquote cite="https://www.facebook.com/jjushyrh/posts/583204800483277"
+							class="fb-xfbml-parse-ignore">
+							<p>Maamulka cibitaalka oo dadaal uggu jira kor u qaadista iyo soo kordhinta adeegyada uu
+								cusbitaalku siiyo bulshada ayaa...</p>Posted by <a
+								href="https://www.facebook.com/jjushyrh">JJU S.H.Yabare Comprehensive Specialized
+								Hospital</a> on&nbsp;<a
+								href="https://www.facebook.com/jjushyrh/posts/583204800483277">Tuesday, December 6,
+								2022</a>
+						</blockquote>
+					</div>
+				</div>
+				<div class="col-sm py-3">
+					<iframe
+						src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fphoto.php%3Ffbid%3D577066961097061%26set%3Da.521016023368822%26type%3D3&show_text=true&width=500"
+						width="100%" height="333" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
+						allowfullscreen="true"
+						allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+					<div class="fb-post"
+						data-href="https://www.facebook.com/photo.php?fbid=577066961097061&amp;set=a.521016023368822&amp;type=3"
+						data-width="100%" data-show-text="true">
+						<blockquote
+							cite="https://www.facebook.com/photo.php?fbid=577066961097061&amp;set=a.521016023368822&amp;type=3"
+							class="fb-xfbml-parse-ignore">
+							<p>Barxada hore ee dakhtarka waxaa baryahan ba ka socotay dib u habayn </p> Posted by <a
+								href="https://www.facebook.com/jjushyrh">JJU
+								S.H.Yabare Comprehensive Specialized Hospital</a> on&nbsp;<a
+								href="https://www.facebook.com/photo.php?fbid=577066961097061&amp;set=a.521016023368822&amp;type=3">Tuesday,
+								November 29, 2022</a>
+						</blockquote>
+					</div>
+				</div>
+
+			</div>
+			<div class="row py-4 gap-4 my-3">
+				<div class="col-sm py-3">
+					<iframe
+						src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fphoto.php%3Ffbid%3D555698323233925%26set%3Da.521016016702156%26type%3D3&show_text=true&width=500"
+						width="100%" height="333" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
+						allowfullscreen="true"
+						allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+					<div class="fb-post"
+						data-href="https://www.facebook.com/photo.php?fbid=555698323233925&amp;set=a.521016016702156&amp;type=3"
+						data-width="100%" data-show-text="true">
+						<blockquote
+							cite="https://www.facebook.com/photo.php?fbid=555698323233925&amp;set=a.521016016702156&amp;type=3"
+							class="fb-xfbml-parse-ignore">
+							<p>Waxaa maanta laso gabagabeeyay tababar ku saabsanaa daawaynta bukaanada u baahan
+								Daryeelka sarre ee (ICU)</p> Posted by <a href="https://www.facebook.com/jjushyrh">JJU
+								S.H.Yabare Comprehensive Specialized Hospital</a> on&nbsp;<a
+								href="https://www.facebook.com/photo.php?fbid=555698323233925&amp;set=a.521016016702156&amp;type=3">Friday,
+								November 4, 2022</a>
+						</blockquote>
+					</div>
+				</div>
+				<div class="col-sm py-3">
+					<iframe
+						src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fjjushyrh%2Fphotos%2Fa.112490914056250%2F501001438538527%2F%3Ftype%3D3&show_text=true&width=500"
+						width="100%" height="333" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
+						allowfullscreen="true"
+						allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+					<div class="fb-post"
+						data-href="https://www.facebook.com/jjushyrh/photos/a.112490914056250/501001438538527/?type=3"
+						data-width="100%" data-show-text="true">
+						<blockquote
+							cite="https://www.facebook.com/jjushyrh/photos/a.112490914056250/501001438538527/?type=3"
+							class="fb-xfbml-parse-ignore">
+							<p>A 5-day Technical Update Training on the "National comprehensive TBL, TB/HIV" was
+								conducted by JJU</p> Posted by <a href="https://facebook.com/jjushyrh">JJU
+								S.H.Yabare Comprehensive Specialized Hospital</a> on&nbsp;<a
+								href="https://www.facebook.com/jjushyrh/photos/a.112490914056250/501001438538527/?type=3">Wednesday,
+								September 21, 2022</a>
+						</blockquote>
+					</div>
+				</div>
+				<div class="col-sm py-3">
+					<iframe
+						src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fjjushyrh%2Fphotos%2Fa.112490914056250%2F477037760934895%2F%3Ftype%3D3&show_text=true&width=500"
+						width="100%" height="333" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
+						allowfullscreen="true"
+						allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+					<div class="fb-post"
+						data-href="https://www.facebook.com/jjushyrh/photos/a.112490914056250/477037760934895/?type=3"
+						data-width="100%" data-show-text="true">
+						<blockquote
+							cite="https://www.facebook.com/jjushyrh/photos/a.112490914056250/477037760934895/?type=3"
+							class="fb-xfbml-parse-ignore">
+							<p>Maamulka Cusbataalka JJU SHEEKH XASAN YABAREE oo Mudooyonki u dembeeyay ku hawlanaa</p>
+							Posted by <a href="https://facebook.com/jjushyrh">JJU
+								S.H.Yabare Comprehensive Specialized Hospital</a> on&nbsp;<a
+								href="https://www.facebook.com/jjushyrh/photos/a.112490914056250/477037760934895/?type=3">Wednesday,
+								August 17, 2022</a>
+						</blockquote>
+					</div>
+				</div>
+			</div>
+			<div class="row py-4 gap-4 my-3">
+				<div class="col-sm py-3">
+					<iframe
+						src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fjjushyrh%2Fposts%2Fpfbid0sZAnZ6RUwRHWqQWB8MVffbbyMQht1MhMEaeHghe6goYGjrgzWFhjpWVC5gbjRwgxl&show_text=true&width=500"
+						width="100%" height="333" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
+						allowfullscreen="true"
+						allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+					<div class="fb-post"
+						data-href="https://www.facebook.com/jjushyrh/posts/pfbid0sZAnZ6RUwRHWqQWB8MVffbbyMQht1MhMEaeHghe6goYGjrgzWFhjpWVC5gbjRwgxl"
+						data-width="100%" data-show-text="true">
+						<blockquote cite="https://www.facebook.com/jjushyrh/posts/575494611254296"
+							class="fb-xfbml-parse-ignore">
+							<p>Galab Wanaagsan
+
+								________________________
+								Si aad xogaha, talooyinka iyo wararka kusaabsan dhakhtarka ula socoto nagu soo...</p>
+							Posted by <a href="https://www.facebook.com/jjushyrh">JJU S.H.Yabare Comprehensive
+								Specialized Hospital</a> on&nbsp;<a
+								href="https://www.facebook.com/jjushyrh/posts/575494611254296">Sunday, November 27,
+								2022</a>
+						</blockquote>
+					</div>
+				</div>
+				<div class="col-sm py-3">
+					<iframe
+						src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fjjushyrh%2Fposts%2Fpfbid02wzFQCxAntXJYNoZ7U98o2S6iit7MF3iw5amYmpaYRBi3V717eX14ptUijDSPdboKl&show_text=true&width=500"
+						width="100%" height="333" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
+						allowfullscreen="true"
+						allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+					<div class="fb-post"
+						data-href="https://www.facebook.com/jjushyrh/posts/pfbid02wzFQCxAntXJYNoZ7U98o2S6iit7MF3iw5amYmpaYRBi3V717eX14ptUijDSPdboKl"
+						data-width="100%" data-show-text="true">
+						<blockquote cite="https://www.facebook.com/jjushyrh/posts/473889287916409"
+							class="fb-xfbml-parse-ignore">
+							<p>BUSHAARO BUSHAARO
+
+								Waxaan dhamaan bulshada lasocodsiinaynaa in waaxda dhimirka (psychiatry department ) ay
+								diyaar...</p>Posted by <a href="https://facebook.com/jjushyrh">JJU S.H.Yabare
+								Comprehensive Specialized Hospital</a> on&nbsp;<a
+								href="https://www.facebook.com/jjushyrh/posts/473889287916409">Friday, August 12,
+								2022</a>
+						</blockquote>
+					</div>
+				</div>
+				<div class="col-sm py-3">
+					<iframe
+						src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fjjushyrh%2Fphotos%2Fa.112490914056250%2F477037760934895%2F%3Ftype%3D3&show_text=true&width=500"
+						width="100%" height="333" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
+						allowfullscreen="true"
+						allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+					<div class="fb-post"
+						data-href="https://www.facebook.com/jjushyrh/photos/a.112490914056250/477037760934895/?type=3"
+						data-width="100%" data-show-text="true">
+						<blockquote
+							cite="https://www.facebook.com/jjushyrh/photos/a.112490914056250/477037760934895/?type=3"
+							class="fb-xfbml-parse-ignore">
+							<p>Maamulka Cusbataalka JJU SHEEKH XASAN YABAREE oo Mudooyonki u dembeeyay ku hawlanaa</p>
+							Posted by <a href="https://facebook.com/jjushyrh">JJU
+								S.H.Yabare Comprehensive Specialized Hospital</a> on&nbsp;<a
+								href="https://www.facebook.com/jjushyrh/photos/a.112490914056250/477037760934895/?type=3">Wednesday,
+								August 17, 2022</a>
+						</blockquote>
+					</div>
+				</div>
 			</div>
 		</div>
 	</section>
@@ -95,138 +524,18 @@
 			<div class="title mb-4">
 				<h2 class="ls-2 text-center">MISSION AND VISION</h2>
 			</div>
-			<!-- <div class="row py-4 gap-4">
-				<div class="col-md border-3 px-0 bg-light border-top border-primary">
-					<div class="main-cont">
-						<div class="img-cont">
-							<img src="./img/hawa.jpg" class="image" alt="" />
-						</div>
-						<div class="middle">
-							<a href="#" class="text nav-link fs-4">READ ALL</a>
-						</div>
-					</div>
-					<div class="desc text-left py-3">
-						<div class="top-title d-flex align-items-center px-2 mb-1">
-							<i class="fa-solid text-primary px-2 fa-greater-than"></i>
-							<a href="#" class="nav-link">
-								<h5 class="mx-3 mb-0">THAT SPIRITED LOOK BELONGS TO HAWA.</h5>
-							</a>
-						</div>
-						<p class="text-secondary px-2">Thursday, January 19, 2023</p>
-						<p class="bg-body text-tertiary d-inline-block py-1 px-2 mx-2 btn">
-							Sudan
-						</p>
-					</div>
-				</div>
-				<div class="col-md border-3 px-0 bg-light border-top border-primary">
-					<div class="main-cont">
-						<div class="img-cont">
-							<img src="./img/mayo.jpg" class="image" alt="" />
-						</div>
-						<div class="middle">
-							<a href="#" class="text nav-link fs-4">READ ALL</a>
-						</div>
-					</div>
-					<div class="desc text-left py-3">
-						<div class="top-title d-flex align-items-center px-2 mb-1">
-							<i class="fa-solid text-primary px-2 fa-greater-than"></i>
-							<a href="#" class="nav-link">
-								<h5 class="mx-3 mb-0">
-									EVERY DAY, AS EARLY AS DAWN, A LONG QUEUE OF PARENTS AND
-									THEIR CHILDREN FORMS IN FRONT OF THE MAYO PEDIATRIC CENTRE.
-								</h5>
-							</a>
-						</div>
-						<p class="text-secondary px-2">Thursday, January 19, 2023</p>
-						<p class="bg-body text-tertiary d-inline-block py-1 px-2 mx-2 btn">
-							Sudan
-						</p>
-					</div>
-				</div>
-			</div> -->
-			<!-- <div class="row py-4 gap-4">
-				<div class="col-md border-3 px-0 bg-light border-top border-primary">
-					<div class="main-cont">
-						<div class="img-cont">
-							<img src="./img/kabul.png" class="image" alt="" />
-						</div>
-						<div class="middle">
-							<a href="#" class="text nav-link fs-4">READ ALL</a>
-						</div>
-					</div>
-					<div class="desc text-left py-3">
-						<div class="top-title d-flex align-items-center px-2 mb-1">
-							<i class="fa-solid text-primary px-2 fa-greater-than"></i>
-							<a href="#" class="nav-link">
-								<h5 class="mx-3 mb-0">KABUL, FIRST MASS CASUALTY OF 2023</h5>
-							</a>
-						</div>
-						<p class="text-secondary px-2">Thursday, January 19, 2023</p>
-						<p class="bg-body text-tertiary d-inline-block py-1 px-2 mx-2 btn">
-							Afghanistan
-						</p>
-					</div>
-				</div>
-				<div class="col-md border-3 px-0 bg-light border-top border-primary">
-					<div class="main-cont">
-						<div class="img-cont">
-							<img src="./img/sudan.jpg" class="image" alt="" />
-						</div>
-						<div class="middle">
-							<a href="#" class="text nav-link fs-4">READ ALL</a>
-						</div>
-					</div>
-					<div class="desc text-left py-3">
-						<div class="top-title d-flex align-items-center px-2 mb-1">
-							<i class="fa-solid text-primary px-2 fa-greater-than"></i>
-							<a href="#" class="nav-link">
-								<h5 class="mx-3 mb-0">
-									TRAINING LOCAL COLLEAGUES IN PORT SUDAN: FATIMA, MUTASIM AND
-									BAHAELDEEN.
-								</h5>
-							</a>
-						</div>
-						<p class="text-secondary px-2">Thursday, January 19, 2023</p>
-						<p class="bg-body text-tertiary d-inline-block py-1 px-2 mx-2 btn">
-							Sudan
-						</p>
-					</div>
-				</div>
-				<div class="col-md border-3 px-0 bg-light border-top border-primary">
-					<div class="main-cont">
-						<div class="img-cont">
-							<img src="./img/iraq.jpg" class="image" alt="" />
-						</div>
-						<div class="middle">
-							<a href="#" class="text nav-link fs-4">READ ALL</a>
-						</div>
-					</div>
-					<div class="desc text-left py-3">
-						<div class="top-title d-flex align-items-center px-2 mb-1">
-							<i class="fa-solid text-primary px-2 fa-greater-than"></i>
-							<a href="#" class="nav-link">
-								<h5 class="mx-3 mb-0">
-									MEET NIGAR: ONE OF THE BBC’S 100 WOMEN OF 2022
-								</h5>
-							</a>
-						</div>
-						<p class="text-secondary px-2">Thursday, January 19, 2023</p>
-						<p class="bg-body text-tertiary d-inline-block py-1 px-2 mx-2 btn">
-							Iraq
-						</p>
-					</div>
-				</div>
-			</div> -->
 			<div class="row my-4 gap-4">
 				<div class="col-sm">
 					<h3 class="py-4">MISSION</h3>
-					<p class="lh-lg">JJU, SHY CSH is committed to provide the highest possible health care service to our
+					<p class="lh-lg">JJU, SHY CSH is committed to provide the highest possible health care service to
+						our
 						society through compassionate, competent and accountable leadership and heath care
 						providers as well as to become one of the best training and research center in the country.</p>
 				</div>
 				<div class="col-sm">
 					<h3 class="py-4">VISION</h3>
-					<p class="lh-lg">JJU, SHY CSH is committed to provide the highest possible health care service to our
+					<p class="lh-lg">JJU, SHY CSH is committed to provide the highest possible health care service to
+						our
 						society through compassionate, competent and accountable leadership and heath care
 						providers as well as to become one of the best training and research center in the country.</p>
 				</div>
@@ -238,7 +547,7 @@
 			<div class="title text-center mb-4">
 				<h2 class="ls-2">HOW TO HELP US</h2>
 				<p>
-					Anyone can contribute to SHYCRH activities and help us affirm
+					Anyone can contribute to Sheik Hassen Yabare Comperhensive Specialized Hospital activities and help us affirm
 					healthcare
 				</p>
 			</div>
@@ -246,24 +555,27 @@
 				<div class="col-md">
 					<img src="./img/donate.png" alt="" />
 					<h5 class="my-5">Support our activities</h5>
-					<a href="./donate.html" class="btn bg-body text-custom fw-bold d-block px-3 py-2 my-2">DONATE NOW</a>
+					<a href="./donate.html" class="btn bg-body text-custom fw-bold d-block px-3 py-2 my-2">DONATE
+						NOW</a>
 				</div>
 				<div class="col-md">
 					<img src="./img/volunter.png" alt="" />
 					<h5 class="my-5">Keep in touch</h5>
-					<a href="./contact.html" class="btn bg-body text-custom fw-bold d-block px-3 py-2 my-2">Contact Us</a>
+					<a href="./contact.html" class="btn bg-body text-custom fw-bold d-block px-3 py-2 my-2">Contact
+						Us</a>
 				</div>
 				<div class="col-md">
 					<img src="./img/work.png" alt="" />
 					<h5 class="my-5">Work with us</h5>
-					<a href="./workwithus.html" class="btn bg-body text-custom fw-bold d-block px-3 py-2 my-2">WHO WE NEED</a>
+					<a href="./workwithus.html" class="btn bg-body text-custom fw-bold d-block px-3 py-2 my-2">WHO WE
+						NEED</a>
 				</div>
 			</div>
 		</div>
 	</section>
 	<section class="how-to-help">
 		<div class="container-sm">
-			<div class="inner-box text-center small-padding">
+			<div class="inner-box text-center text-cut small-padding">
 				<h2 class="title">
 					Your support allows us to help those who need it. Every day.
 				</h2>
@@ -271,7 +583,8 @@
 					Make a donation and help us provide medical and surgical care.
 				</p>
 				<div>
-					<a class="main-button btn py-3 px-4 fw-bold medium fadeUp" href="./donate.html" target="_blank">Donate Now</a>
+					<a class="main-button btn py-3 px-4 fw-bold medium fadeUp" href="./donate.html"
+						target="_blank">Donate Now</a>
 				</div>
 			</div>
 		</div>
@@ -287,6 +600,10 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
 	integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
 	crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+	<!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script> -->
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 <script>
 	$(function () {
 		$("#include_header").load("header.html");
@@ -298,6 +615,9 @@
 		myFunction();
 	};
 
+	$('#myModal').on('shown.bs.modal', function () {
+  $('#myInput').trigger('focus')
+})
 	var navbar = document.getElementById("navbar");
 	var sticky = navbar.offsetTop;
 
