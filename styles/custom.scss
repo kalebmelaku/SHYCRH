@@ -295,6 +295,23 @@ main {
 		}
 	}
 }
+.bids{
+	.upload{
+		display: flex;
+		align-items: center;
+		justify-content: end;
+	}
+	.card{
+		height: 100%;
+		border-left: 3px solid $blue;
+		transition: all 300ms;
+		.row-bid{
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+		}
+	}
+}
 section {
 	&.count {
 		background-color: #f8f8f8;
