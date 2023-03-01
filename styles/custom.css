@@ -509,14 +509,13 @@ section.portfolio .ward-title {
   text-align: center;
   margin-top: 1rem;
 }
-section.portfolio .docs-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-}
 section.portfolio .docs {
   height: 100%;
+  cursor: pointer;
+  transition: all 400ms ease-in-out;
+}
+section.portfolio .docs div {
+  width: 100%;
 }
 section.portfolio .docs .contents {
   display: flex;
@@ -542,10 +541,17 @@ section.portfolio .docs .right-text h2, section.portfolio .docs .right-text h4 {
 }
 section.portfolio .docs .right-text p {
   text-align: left;
+}
+section.portfolio .docs .right-text .clamp {
+  text-align: left;
   display: -webkit-box;
   -webkit-line-clamp: 5;
   -webkit-box-orient: vertical;
   overflow: hidden;
+}
+section.portfolio .docs:hover {
+  background-color: #023c7b !important;
+  color: #fff;
 }
 
 main.whoweare {

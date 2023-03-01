@@ -588,14 +588,14 @@ section {
 			margin-top: 1rem;
 		}
 	
-		.docs-container{
-			display: flex;
-			align-items: center;
-			justify-content: center;
-			flex-wrap: wrap;
-		}
+		// .docs-container{
+		// }
 		.docs{
+			div{
+				width: 100%;
+			}
 			height: 100%;
+			cursor: pointer;
 			// display: flex;
 			// align-items: center;
 			// justify-content: space-between;
@@ -624,11 +624,19 @@ section {
 				}
 				p{
 					text-align: left;
+				}
+				.clamp{
+					text-align: left;
 					display: -webkit-box;
 					-webkit-line-clamp: 5;
 					-webkit-box-orient: vertical;
 					overflow: hidden;
 				}
+			}
+			transition: all 400ms ease-in-out;
+			&:hover{
+				background-color: $blue !important;
+				color: $white;
 			}
 		}
 	}
