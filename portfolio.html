@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- <link rel="stylesheet" href="output.css" /> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/custom.css" />
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon" />
+    <title>PORTFOLIO</title>
+</head>
+
+<body>
+    <header>
+        <div class="top-nav-wrapper">
+			<div class="top" id="top">
+				<div class="cont">
+				  <div class="title">
+					<h3>Announcements</h3>
+					<div id="slider">
+					  <figure>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, impedit?</p>
+						<p>Lorem, ipsum dolor.</p>
+						<p>Lorem ipsum dolor sit amet.</p>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+					  </figure>
+					</div>
+				  </div>
+				  <div class="close_x">
+					<p style="color: #fff;" id="closebtn">X</p>
+				  </div>
+				</div>
+			  </div>
+			  <script>
+				const closeBtn = document.getElementById('closebtn');
+				closeBtn.addEventListener("click", function() {
+				  document.getElementById('top').style.display = 'none';
+				});
+			  </script>
+		</div>
+        <nav class="navbar navbar-expand-lg" id="navbar">
+            <div class="container-fluid">
+                <a href="#" class="navbar-brand">
+                    <img src="./img/JJUSHYCSH LOGO WHITE.png" alt="logo" width="150" height="40"
+                        class="d-inline-block align-text-top" />
+                </a>
+
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon">
+                        <i class="fas fa-bars" style="color:#fff; font-size:28px;"></i>
+                    </span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav ms-auto"></div>
+                    <div class="navbar-nav">
+                        <ul class="navbar-nav d-flex align-items-center justify-content-center">
+                            <li class="nav-item">
+                                <a href="index.html" class="nav-item  nav-link">HOME</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle current" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    WHO WE ARE
+                                </a>
+                                <ul class="dropdown-menu bg-custom">
+                                    <li class="py-1">
+                                        <a class="dropdown-item text-light" href="whoweare.html">About Us</a>
+                                    </li>
+                                    <li class="py-1">
+                                        <a class="dropdown-item text-light" href="ward.html">Ward</a>
+                                    </li>
+                                    <li class="py-1">
+                                        <a class="dropdown-item text-light" href="portfolio.html">Portfolio</a>
+                                    </li>
+
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    WHAT WE DO
+                                </a>
+                                <ul class="dropdown-menu bg-custom">
+                                    <li class="py-1">
+                                        <a class="dropdown-item text-light" href="research.html">Research</a>
+                                    </li>
+                                    <li class="py-1">
+                                        <a class="dropdown-item text-light" href="academic.html">Academic</a>
+                                    </li>
+                                    <li class="py-1">
+                                        <a class="dropdown-item text-light" href="services.html">Services</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    WORK WITH US
+                                </a>
+                                <ul class="dropdown-menu bg-custom">
+                                    <li class="py-1">
+                                        <a class="dropdown-item text-light" href="career.html">Career</a>
+                                    </li>
+                                    <li class="py-1">
+                                        <a class="dropdown-item text-light" href="bids.html">Bids</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    RESOURCE
+                                </a>
+                                <ul class="dropdown-menu bg-custom">
+                                    <li class="py-1">
+                                        <a class="dropdown-item text-light" href="blog.html">Blog</a>
+                                    </li>
+                                    <li class="py-1">
+                                        <a class="dropdown-item text-light" href="tips.html">Tips</a>
+                                    </li>
+                                    <li class="py-1">
+                                        <a class="dropdown-item text-light" href="testimonial.html">Testimonial</a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li class="nav-item">
+                                <a href="donate.html" class="nav-item nav-link">DONATE</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- <a href="donate.html" class="nav-item nav-link donate">DONATE</a> -->
+                <button type="button" class="nav-item nav-link donate" data-toggle="modal" data-target="#exampleModal">
+                    Login
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <section class="portfolio">
+        <div class="container-sm">
+            <h3 class="py-3 ward-title">Medical Ward</h3>
+            <div class="row align-items-stretch docs-container py-2 align-items-start justify-content-center mx-auto gap-4 text-center">
+                
+                <div class="py-2 col-md-3 bg-light docs">
+                    <div class="title">
+                        <h2 class="text-center">Dr. Ali Nour Adam</h2>
+                    </div>
+                    <div class="contents">
+                        <div class="left-img">
+                            <img src="./ed/IMG_1286.jpg" alt="">
+                        </div>
+                        <div class="right-text">
+                            <h4>MD, MPH, MTM, INTERNIST</h4>
+                            <P>Dr Ali Nour is a well-respected medical doctor, public health expert, and internist,
+                                currently serving as a faculty member at Jigjiga University's Shekh Hassen Yabare
+                                Comprehensive Specialized Hospital in Ethiopia. Dr. Adam holds a Master's in Public
+                                Health
+                                (MPH) and a Master's in Tropical Medicine (MTM) in addition to his medical degree. He
+                                has
+                                spent much of his career working in underserved areas and has a particular interest in
+                                infectious diseases and tropical medicine. Dr. Adam is also a dedicated teacher and
+                                mentor,
+                                committed to educating the next generation of medical professionals. He has published
+                                research on a range of health topics and is a sought-after speaker at conferences and
+                                seminars. Dr. Ali Nour Adam's passion for improving health outcomes and providing
+                                quality
+                                medical care has made him a valued member of the healthcare community in Ethiopia and
+                                beyond.</P>
+                            <P>aliadam@jjushycsh.com</P>
+                        </div>
+                    </div>
+                </div>
+                <div class="py-2 col-md-3 bg-light docs">
+                    <div class="title">
+                        <h2 class="text-center">Dr. Abraham Agidu </h2>
+                    </div>
+                    <div class="contents">
+                        <div class="left-img">
+                            <img src="./ed/IMG_1294.jpg" alt="">
+                        </div>
+                        <div class="right-text">
+                            <h4>Medical Doctor, Internist</h4>
+                            <P>is a highly skilled medical doctor and internist currently serving at the Shekh Hassen
+                                Yabare Comprehensive Specialized Hospital in Jigjiga University, Ethiopia. He received
+                                his medical degree from a leading medical school and has many years of experience in the
+                                field of internal medicine. Dr. Agidu is known for his compassionate approach to patient
+                                care, providing comprehensive evaluations and personalized treatment plans for each of
+                                his patients. He has a particular interest in the management of chronic diseases such as
+                                diabetes, hypertension, and heart disease. In addition to his clinical work, Dr. Agidu
+                                is also involved in teaching and training medical students and residents. He is
+                                committed to advancing medical education and research in his field and has published
+                                several papers on various topics related to internal medicine. Dr. Abraham Agidu's
+                                expertise, dedication, and patient-centered approach have earned him a well-deserved
+                                reputation as a trusted and respected physician in his community.
+
+                            </P>
+                            <P>Abrahamagidu@jjushycsh.com</P>
+                        </div>
+                    </div>
+                </div>
+                <div class="py-2 col-md-3 bg-light docs">
+                    <div class="title">
+                        <h2 class="text-center">Dr. Habtamu Amtachew </h2>
+                    </div>
+                    <div class="contents">
+                        <div class="left-img">
+                            <img src="./ed/IMG_1297.jpg" alt="">
+                        </div>
+                        <div class="right-text">
+                            <h4>MD, Internist, Nephrologist </h4>
+                            <P>is a distinguished medical doctor, internist, and nephrologist currently serving as a
+                                faculty member at Jigjiga University's Shekh Hassen Yabare Comprehensive Specialized
+                                Hospital in Ethiopia. He received his medical degree from a prestigious institution and
+                                completed specialized training in internal medicine and nephrology. Dr. Amtacew has a
+                                keen interest in kidney disease, and he is known for his exceptional expertise in the
+                                management of renal disorders, including kidney failure, glomerular diseases, and
+                                electrolyte imbalances. He is committed to providing his patients with the highest level
+                                of care, and he employs the latest technologies and treatments to achieve optimal health
+                                outcomes. Dr. Amtacew is also an accomplished researcher and educator, having published
+                                several papers on nephrology and participated in numerous medical conferences and
+                                symposia. His contributions to the field of nephrology have been recognized with several
+                                awards and accolades. Dr. Habtamu Amtacew's dedication to patient care and advancement
+                                in the field of nephrology have made him a valued member of the healthcare community in
+                                Ethiopia and beyond.
+
+                            </P>
+                            <P> Habtamuamtacew@jjushycsh.com</P>
+                        </div>
+                    </div>
+                </div>
+                <div class="py-2 col-md-3 bg-light docs">
+                    <div class="title">
+                        <h2 class="text-center">Dr. Zerihun Abera </h2>
+                    </div>
+                    <div class="contents">
+                        <div class="left-img">
+                            <img src="./ed/IMG_1301.jpg" alt="">
+                        </div>
+                        <div class="right-text">
+                            <h4>Medical Doctor, Internist</h4>
+                            <P>is a dedicated medical doctor and internist at Jigjiga University Shekh Hassen Yabare
+                                Comprehensive Specialized Hospital. With years of experience in the medical field, he
+                                has become an expert in diagnosing and treating a wide range of medical conditions. Dr.
+                                Abera is committed to providing the highest level of care to his patients and ensuring
+                                their overall well-being. He is known for his compassionate and empathetic approach to
+                                patient care, which has earned him the respect and admiration of both his colleagues and
+                                patients alike. In addition to his work as a medical doctor, Dr. Abera is also a
+                                passionate advocate for healthcare access and equity in underserved communities. Through
+                                his dedication to his patients and his community, Dr. Zerihun Abera has become a valued
+                                member of the medical profession.
+
+                            </P>
+                            <P> Zerihunabera@jjushycsh.com</P>
+                        </div>
+                    </div>
+                </div>
+                <div class="py-2 col-md-3 bg-light docs">
+                    <div class="title">
+                        <h2 class="text-center">Dr. Mahlet Tadesse </h2>
+                    </div>
+                    <div class="contents">
+                        <div class="left-img">
+                            <img src="./ed/IMG_1303.jpg" alt="">
+                        </div>
+                        <div class="right-text">
+                            <h4>Medical Doctor, Internist</h4>
+                            <P>is a highly skilled medical doctor and internist who currently serves at Jigjiga
+                                University Shekh Hassen Yabare Comprehensive Specialized Hospital. With a wealth of
+                                experience and knowledge in the medical field, Dr. Tadesse is known for her exceptional
+                                diagnostic abilities and her compassionate approach to patient care. She is dedicated to
+                                helping her patients achieve optimal health outcomes and is committed to providing the
+                                highest level of medical care possible. Dr. Tadesse is a strong advocate for preventive
+                                medicine and believes in the importance of patient education in maintaining long-term
+                                health. In addition to her work as a medical doctor, Dr. Tadesse is actively involved in
+                                medical research and has published several papers on a variety of medical topics.
+                                Through her dedication and commitment to her patients and the medical profession, Dr.
+                                Mahlet Tadesse has become a respected and valued member of the medical community.
+
+                            </P>
+                            <P>Mahlettadesse@jjushycsh.com</P>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-sm">
+            <h3 class="py-3 ward-title">OBSTRECTIC AND GYNICOLOGY WARD</h3>
+            <div class="row docs-container py-2 align-items-start justify-content-center mx-auto gap-4 text-center">
+                <div class="py-2 col-md-3 bg-light docs">
+                    <div class="title">
+                        <h2 class="text-center">Dr. Hassen Mohammed </h2>
+                    </div>
+                    <div class="contents">
+                        <div class="left-img">
+                            <img src="./ed/IMG_1310.jpg" alt="">
+                        </div>
+                        <div class="right-text">
+                            <h4>Medical Doctor, Gynecologist</h4>
+                            <P>is a highly skilled medical doctor and gynecologist who practices at Jigjiga University
+                                Shekh Hassen Yabare Comprehensive Specialized Hospital. With a wealth of experience in
+                                women's health, Dr. Mohammed is known for his exceptional clinical skills and
+                                compassionate approach to patient care. He is dedicated to helping women achieve optimal
+                                health outcomes and is committed to providing the highest level of medical care
+                                possible. Dr. Mohammed is a strong advocate for women's health and believes in the
+                                importance of patient education in maintaining long-term health. He is highly regarded
+                                by his colleagues and patients alike for his expertise and dedication to his profession.
+                                In addition to his work as a medical doctor, Dr. Mohammed is actively involved in
+                                medical research and has published several papers on a variety of gynecological topics.
+                                Through his dedication and commitment to his patients and the medical profession, Dr.
+                                Hassen Mohammed has become a respected and valued member of the medical community.
+
+                            </P>
+                            <P> Hassenmohammed@jjushycsh.com</P>
+                        </div>
+                    </div>
+                </div>
+                <div class="py-2 col-md-3 bg-light docs">
+                    <div class="title">
+                        <h2 class="text-center">Dr. Abdusalam Usman Absiye</h2>
+                    </div>
+                    <div class="contents">
+                        <div class="left-img">
+                            <img src="./ed/IMG_1258.jpg" alt="">
+                        </div>
+                        <div class="right-text">
+                            <h4>Medical Doctor, Assistant professor of Obstetric and Gynecologist</h4>
+                            <P>is a highly respected medical doctor and assistant professor of Obstetrics and Gynecology
+                                at Jigjiga University's Shekh Hassen Yabare Comprehensive Specialized Hospital. With a
+                                wealth of knowledge and experience in his field, Dr. Absiye has earned a reputation as a
+                                dedicated healthcare provider and a compassionate caregiver. He is committed to
+                                improving the lives of his patients and has devoted his career to providing high-quality
+                                obstetric and gynecological care. Dr. Absiye is also a valued member of the medical
+                                community, with numerous publications and research projects to his name. His
+                                contributions to the field have been widely recognized, and he is admired for his
+                                dedication to advancing medical knowledge and improving patient outcomes.
+
+
+                            </P>
+                            <P>abdusalamabsiye@jjushycsh.com</P>
+                        </div>
+                    </div>
+                </div>
+                <div class="py-2 col-md-3 bg-light docs">
+                    <div class="title">
+                        <h2 class="text-center">Dr. Yared Kifle Berhanu </h2>
+                    </div>
+                    <div class="contents">
+                        <div class="left-img">
+                            <img src="./ed/IMG_1254.jpg" alt="">
+                        </div>
+                        <div class="right-text">
+                            <h4>Medical Doctor, Assistant professor of Obstetric and Gynecologist</h4>
+                            <P>is a highly skilled medical doctor and assistant professor of Obstetrics and Gynecology
+                                at Jigjiga University's Shekh Hassen Yabare Comprehensive Specialized Hospital. Dr.
+                                Berhanu is a dedicated healthcare provider who is passionate about helping women achieve
+                                their health goals. With many years of experience in the field of obstetrics and
+                                gynecology, Dr. Berhanu has earned a reputation as a skilled and compassionate
+                                physician. He is committed to providing the highest quality care to his patients and is
+                                known for his ability to make patients feel comfortable and cared for. Dr. Berhanu is
+                                also a respected member of the medical community, with a long list of publications and
+                                research projects to his credit. His contributions to the field have been widely
+                                recognized, and he is admired for his commitment to advancing medical knowledge and
+                                improving patient outcomes.
+                            </P>
+                            <P> Yaredberhanu@jjushycsh.com</P>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Button trigger modal -->
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Login Page</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp" placeholder="Enter email">
+
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1"
+                                placeholder="Password">
+                        </div>
+                        <button type="submit" class="mt-2 btn btn-primary btn-login">Login</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    </header>
+
+
+
+
+
+    <footer class="bg-light py-5" id="include_footer"></footer>
+</body>
+
+</html>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
+    integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script> -->
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+<script>
+    $(function () {
+        $("#include_header").load("header.html");
+        $("#include_footer").load("footer.html");
+    });
+
+    window.onscroll = function () {
+        myFunction();
+    };
+
+    var navbar = document.getElementById("navbar");
+    var sticky = navbar.offsetTop;
+
+    function myFunction() {
+        if (window.pageYOffset >= sticky) {
+            navbar.classList.add("sticky");
+        } else {
+            navbar.classList.remove("sticky");
+        }
+    }
+
+
+</script>

@@ -1,3 +1,95 @@
+/*variables*/
+.top {
+  background-color: #fff;
+  padding: 0.5rem !important;
+}
+.top .cont {
+  display: flex;
+  align-items: center;
+}
+.top .cont .title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.top .cont .title h3 {
+  padding: 0;
+  margin: 0;
+  padding-right: 0.5rem;
+  color: #023c7b;
+  font-size: 1.2rem;
+  border-right: 5px solid #023c7b;
+  margin-left: 1.5rem;
+}
+.top .cont .close_x p {
+  position: relative;
+  z-index: 3;
+  color: #023c7b !important;
+  cursor: pointer;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+#slider {
+  overflow: hidden;
+}
+
+#slider figure {
+  position: relative;
+  width: 500%;
+  margin: 0;
+  left: 0;
+  animation: 20s slider infinite;
+  margin-left: 1rem;
+}
+
+#slider figure p {
+  float: left;
+  width: 20%;
+  color: #023c7b;
+  text-transform: capitalize;
+  font-size: 1.2rem;
+  margin-bottom: 0;
+}
+
+@keyframes slider {
+  0% {
+    left: 0;
+  }
+  20% {
+    left: 0;
+  }
+  25% {
+    left: -100%;
+  }
+  45% {
+    left: -100%;
+  }
+  50% {
+    left: -200%;
+  }
+  70% {
+    left: -200%;
+  }
+  75% {
+    left: -300%;
+  }
+  95% {
+    left: -300%;
+  }
+  100% {
+    left: -400%;
+  }
+}
+@media (max-width: 720px) {
+  header {
+    position: relative;
+  }
+  header .top {
+    display: none !important;
+  }
+}
 * {
   margin: 0;
   padding: 0;
@@ -70,6 +162,7 @@ body {
 }
 .navbar .navbar-collapse a {
   color: #fff;
+  font-size: 0.8rem;
 }
 .navbar .navbar-collapse a:hover {
   color: #eee !important;
@@ -79,8 +172,8 @@ body {
 }
 .navbar .donate {
   background-color: #ff0000;
-  margin-left: 2rem;
-  padding: 12px 48px;
+  margin-left: 0;
+  padding: 10px 48px;
   color: #fff;
   font-weight: bold;
   border: none;
@@ -155,6 +248,16 @@ main .hero-text a {
 main .hero-text a:hover {
   background-color: #023c7b !important;
   color: #fff !important;
+}
+
+.services .card {
+  height: 100%;
+  border-left: 3px solid #023c7b;
+  transition: all 300ms;
+}
+.services .card:hover {
+  background-color: #023c7b;
+  color: #fff;
 }
 
 section.count {
@@ -384,6 +487,50 @@ section.news-video .col-vid {
 section.news-video .col-vid iframe {
   height: 100% !important;
 }
+section.portfolio .ward-title {
+  background-color: #023c7b;
+  color: #fff;
+  text-align: center;
+  margin-top: 1rem;
+}
+section.portfolio .docs-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+section.portfolio .docs {
+  height: 100%;
+}
+section.portfolio .docs .contents {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+}
+section.portfolio .docs .left-img {
+  padding: 1rem;
+  height: 100%;
+}
+section.portfolio .docs .left-img img {
+  width: 100%;
+  border: 5px solid #023c7b;
+}
+section.portfolio .docs .right-text {
+  padding: 1rem;
+}
+section.portfolio .docs .right-text h2, section.portfolio .docs .right-text h4 {
+  word-wrap: normal;
+  word-break: keep-all;
+  text-align: center;
+}
+section.portfolio .docs .right-text p {
+  text-align: left;
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
 
 main.whoweare {
   width: 100%;
@@ -416,7 +563,7 @@ main.whoweare .inner-box {
   padding-top: 5rem;
 }
 main.whoweare .inner-box h1 {
-  font-size: 4rem;
+  font-size: 3rem;
 }
 main.short {
   min-height: 300px;
@@ -530,6 +677,13 @@ footer .bottom-footer p {
 
 .sticky + .content {
   padding-top: 60px;
+}
+
+.dept .hide {
+  display: none;
+}
+.dept h5 {
+  cursor: pointer;
 }
 
 @media (max-width: 456px) {
