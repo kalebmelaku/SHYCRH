@@ -16,7 +16,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles/custom.css" />
     <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon" />
-    <title>SERVICES</title>
+    <title>BLOOD BANK</title>
 </head>
 
 <body>
@@ -147,70 +147,78 @@
         </nav>
     </header>
 
-
-    <div class="container my-5 services">
-        <div class="row justify-content-center gap-4 align-items-stretch">
-            <div class="col-md-5">
-                <div class="card">
-                    <a href="./bloodbank.html">
-                        <div class="card-body">
-                            <h5 class="card-title">Blood Bank</h5>
-                            <p class="card-text">Our hospital has a well-equipped blood bank with all blood types readily
-                                available. We maintain the highest standards of safety and cleanliness in our blood bank.
-                            </p>
-                            
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="col-md-5">
-                <div class="card">
-                    <a href="./ambulance.html">
-
-                        <div class="card-body">
-                            <h5 class="card-title">Ambulance Service</h5>
-                            <p class="card-text">Our ambulance service is available 24/7 to transport patients to and from
-                                our hospital. Our ambulances are equipped with all necessary medical equipment and staffed
-                                by trained professionals.</p>
-                                
-                            </div>
-                        </a>
-                </div>
-            </div>
-            <div class="col-md-5">
-                <div class="card">
-                    <a href="./kidney.html">
-
-                        <div class="card-body">
-                            <h5 class="card-title">Kidney Dialysis</h5>
-                            <p class="card-text">
-                                Kidney dialysis is a service offered by hospitals to patients suffering from kidney failure.
-                                It involves the use of a machine to filter the patient's blood, removing waste products and
-                                excess fluids that would normally be eliminated by the kidneys
-                            </p>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="col-md-5">
-                <div class="card">
-                    <a href="./cancer.html">
-
-                        <div class="card-body">
-                            <h5 class="card-title">Cancer Treatment</h5>
-                            <p class="card-text">
-                                Cancer treatment is a vital service provided by hospitals to patients diagnosed with cancer.
-                                The service includes a wide range of medical interventions, such as chemotherapy, radiation
-                                therapy, surgery, and immunotherapy.
-                            </p>
-                        </div>
-                    </a>
+    <section class="slides">
+        <div class="container-sm">
+            <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img class="img-responsive" src="img/surgery.jpg" alt="First slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="img-responsive" src="img/capacity.png" alt="Second slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="img-responsive" src="img/hawa.jpg" alt="Third slide">
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
 
+    </section>
+    <section class="services py-3 bg-light">
+        <div class="container-sm">
+            <div class="row gap-3 justify-content-center">
+                <div class="col-sm-5">
+                    <div class="card">
+                        <div class="card-body">
+                            <p class="card-text">Our hospital has a well-equipped blood bank with all blood types
+                                readily
+                                available. We maintain the highest standards of safety and cleanliness in our blood
+                                bank.
+                            </p>
 
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-5">
+                    <div class="card">
+                        <div class="card-body">
+                            <p class="card-text">Our hospital has a well-equipped blood bank with all blood types
+                                readily
+                                available. We maintain the highest standards of safety and cleanliness in our blood
+                                bank.
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-5">
+                    <div class="card">
+                        <div class="card-body">
+                            <p class="card-text">Our hospital has a well-equipped blood bank with all blood types
+                                readily
+                                available. We maintain the highest standards of safety and cleanliness in our blood
+                                bank.
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-5">
+                    <div class="card">
+                        <div class="card-body">
+                            <p class="card-text">Our hospital has a well-equipped blood bank with all blood types
+                                readily
+                                available. We maintain the highest standards of safety and cleanliness in our blood
+                                bank.
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
 
 
@@ -295,4 +303,9 @@
         }
     }
 
+</script>
+<script>
+    $('.carousel').carousel({
+        interval: 3000
+    })
 </script>

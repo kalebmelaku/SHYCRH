@@ -259,6 +259,16 @@ main .hero-text a:hover {
   background-color: #023c7b;
   color: #fff;
 }
+.services .card:hover a {
+  color: #fff;
+}
+.services .card a {
+  color: #000;
+  text-decoration: none;
+}
+.services .card a:hover {
+  color: #fff;
+}
 
 .bids .upload {
   display: flex;
@@ -552,6 +562,19 @@ section.portfolio .docs .right-text .clamp {
 section.portfolio .docs:hover {
   background-color: #023c7b !important;
   color: #fff;
+}
+section.slides .carousel-inner {
+  height: 30rem;
+}
+section.slides .carousel-inner .carousel-item {
+  height: 100%;
+  overflow: auto;
+}
+section.slides .carousel-inner .carousel-item img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover !important;
+     object-fit: cover !important;
 }
 
 main.whoweare {
