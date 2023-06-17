@@ -313,8 +313,7 @@ section.news .row .image {
   width: 100%;
   height: auto;
   transition: 0.5s ease;
-  -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
+  backface-visibility: hidden;
 }
 section.news .row .middle {
   transition: 0.5s ease;
