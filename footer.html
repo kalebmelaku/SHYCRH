@@ -118,16 +118,16 @@
                     <div class="row justify-content-center">
                         <div class="col-sm">
                             <h4 class="mb-4 text-center text-nowrap">Hospital Appointment</h4>
-                            <form class="appointment">
+                            <form class="appointment" id="myForm">
                                 <div class="d-flex align-items-center ">
                                     <div class="form-group mb-3">
                                         <label for="name">Name:</label>
-                                        <input type="text" class="form-control" id="name" placeholder="Enter your name">
+                                        <input type="text" class="form-control" id="name" required placeholder="Enter your name">
                                     </div>
                                     <div class="form-group mb-3">
                                         <label for="email">Email:</label>
                                         <input type="email" class="form-control" id="email"
-                                            placeholder="Enter your email">
+                                            required placeholder="Enter your email">
                                     </div>
                                 </div>
                                 <div class="d-flex align-items-center ">
@@ -135,33 +135,33 @@
                                     <div class="form-group mb-3">
                                         <label for="phone">Phone:</label>
                                         <input type="tel" class="form-control" id="phone"
-                                            placeholder="Enter your phone number">
+                                            required placeholder="Enter your phone number">
                                     </div>
                                     <div class="form-group mb-3">
                                         <label for="date">Appointment Date:</label>
                                         <input type="date" class="form-control" id="date"
-                                            placeholder="Enter your appointment date">
+                                            required placeholder="Enter your appointment date">
                                     </div>
                                 </div>
                                 <div class="d-flex align-items-center ">
                                     <div class="form-group mb-3">
                                         <label for="time">Appointment Time:</label>
                                         <input type="time" class="form-control" id="time"
-                                            placeholder="Enter your appointment time">
+                                            required placeholder="Enter your appointment time">
                                     </div>
                                     <div class="form-group mb-3">
                                         <label for="department">Department:</label>
-                                        <select class="form-control" id="department">
+                                        <select class="form-control" id="department" required>
                                             <option value="">Select Department</option>
-                                            <option value="cardiology">Cardiology</option>
-                                            <option value="orthopedics">Orthopedics</option>
-                                            <option value="neurology">Neurology</option>
-                                            <option value="oncology">Oncology</option>
-                                            <option value="gynecology">Gynecology</option>
+                                            <option value="Cardiology">Cardiology</option>
+                                            <option value="Orthopedics">Orthopedics</option>
+                                            <option value="Neurology">Neurology</option>
+                                            <option value="Oncology">Oncology</option>
+                                            <option value="Gynecology">Gynecology</option>
                                         </select>
                                     </div>
                                 </div>
-                                <button type="submit" class="btn btn-primary btn-block btn-login">Login</button>
+                                <input id="appointment_btn" type="submit" class="btn btn-primary btn-block btn-login" value="Submit" />
                             </form>
                         </div>
                     </div>
@@ -170,3 +170,37 @@
         </div>
     </div>
 </div>
+
+<script>
+
+(function(){
+      emailjs.init("8ie-OnmZqIm1iARmG");
+   })();
+
+       const appointment_btn = document.getElementById('appointment_btn');
+       const name = document.getElementById('name')
+       const email = document.getElementById('email')
+       const date = document.getElementById('date')
+       const time = document.getElementById('time')
+       const department = document.getElementById('department')
+       const appointment = document.getElementById('appointment')
+
+appointment_btn.addEventListener("click", (e)=>{
+
+
+    emailjs.send("service_k5bbnzt","template_qktbzhh",{
+name: name.value,
+date: date.value,
+email: email.value,
+time: time.value,
+department: department.value,
+}) .then((res) =>{
+    alert('Your Appointment Is Reserved')
+    window.location.reload()
+    appointment.classList.remove('show')
+    document.body.classList.remove('modal-open')
+}).then(err=>console.log(err))
+
+     e.preventDefault();
+})
+</script>
