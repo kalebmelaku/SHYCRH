@@ -1,4 +1,8 @@
 /*variables*/
+.invalid {
+  border-color: #ff0000 !important;
+}
+
 .top {
   background-color: #fff;
   padding: 0.5rem !important;

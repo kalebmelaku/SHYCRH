@@ -3,6 +3,10 @@ $blue: #023c7b;
 $white: #fff;
 /*variables*/
 
+.invalid{
+border-color: #ff0000 !important;
+}
+
 .top {
     background-color: $white;
     padding: .5rem !important;
