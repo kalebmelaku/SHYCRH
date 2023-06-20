@@ -337,9 +337,9 @@ section.news .row .text {
 }
 section.how-to-help {
   margin-top: 2rem;
-  background: url(https://en.emergency.it/wp-content/uploads/2020/06/Dahen-phot.jpeg) no-repeat center center/cover;
+  background: url("../img/howtohelp.jpg") no-repeat center center/cover;
   width: 100vw !important;
-  min-height: 800px;
+  min-height: 500px;
   position: relative;
 }
 section.how-to-help:before {
